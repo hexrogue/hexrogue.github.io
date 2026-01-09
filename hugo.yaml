@@ -1,0 +1,53 @@
+baseURL: https://hexrogue.github.io/
+languageCode: en-us
+title: "Nuh's Portfolio"
+description: "Hi, I'm Nuh. Fullstack developer and hacker wannabe. Check out my projects and resume here."
+
+params:
+  author: "Muhammad Nuh"
+  description: "Fullstack developer with a passion for web development, bots, and server setups."
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+
+  social:
+    github: "hexrogue"
+    # linkedin: ""
+  blog:
+    list:
+      displayTags: true
+  toc:
+    displayTags: true
+
+menu:
+  main:
+    - identifier: contact
+      name: Contact
+      url: /contact
+      weight: 1
+    - identifier: blogs
+      name: Blogs
+      url: /blog/
+      weight: 2
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 3
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ["$$", "$$"]]
+          inline: [['\(', '\)']]
+        enable: true
+      
+module:
+  imports:
+    - path: github.com/imfing/hextra
