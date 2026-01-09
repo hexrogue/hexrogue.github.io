@@ -323,3 +323,7 @@ This project taught me one thing:
 
 Prayer times are not mystical.
 They are celestial mechanics rendered human.
+
+{{< callout type="warning" >}}
+This project is intended for **portfolio and educational purposes only**. For official prayer times, always refer to [e-solat.gov.my](https://www.e-solat.gov.my).
+{{< /callout >}}

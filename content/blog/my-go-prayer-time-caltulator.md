@@ -106,7 +106,3 @@ So, while this tool is great for a project showcase, if you need 100% verified a
 ## Wrap Up
 
 This project taught me a ton about Go, TUI design, and why ancient astronomers were basically geniuses. If you're into Go or just want to see how I organized the code, check out the repo!
-
-{{< callout type="warning" >}}
-This project is intended for **portfolio and educational purposes only**. For official prayer times, always refer to [e-solat.gov.my](https://e-solat.gov.my).
-{{< /callout >}}
