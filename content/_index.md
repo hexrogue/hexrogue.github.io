@@ -23,6 +23,8 @@ A terminal-based **prayer time calculator** for Malaysia with an interactive TUI
 
 ![](https://raw.githubusercontent.com/hexrogue/city2coordinates/refs/heads/main/demo1.gif)
 
+> For a full walkthrough and step-by-step explanation of how I built this project, check out my [blog here](/blog/my-go-prayer-time-calculator-from-pdf-formulas-to-terminal-tui).
+
 ### [City2Coordinates](https://github.com/hexrogue/city2coordinates)
 A lightweight **Go** tool that geocodes Malaysian cities and districts into latitude & longitude using OpenStreetMap’s Nominatim API, then stores them in a local `SQLite` database.
 
@@ -32,18 +34,13 @@ A lightweight **Go** tool that geocodes Malaysian cities and districts into lati
 
 ![](https://raw.githubusercontent.com/hexrogue/PrayerTime/refs/heads/main/assets/demo.gif)
 
+> For a full walkthrough and step-by-step explanation of how I built this project, check out my [blog here](/blog/my-go-prayer-time-caltulator.md).
+
 ### [Xray Workers](https://github.com/hexrogue/xray-worker)
 A **Cloudflare Workers**-based VLESS proxy system with user management via **D1 database**. Enables lightweight, scalable VPN subscriptions without managing servers.
 
 - **Tech**: TypeScript, Cloudflare Workers, D1, VLESS
 - **Use Case**: Personal infrastructure for secure tunneling
-
-## ✍️ Life Update
-
-{{< recent-posts >}}
-
-[View all posts →](/blog)
-
 
 ## 💼 Work Experience
 
@@ -80,3 +77,10 @@ WordPress • Drupal • PayloadCMS • Hugo
 
 > 🔐 I care about **security**, **performance**, and **simplicity**.  
 > 🖥️ My ideal stack: terminal + Go + SQLite + Cloudflare.
+
+## ✍️ Life Update
+
+{{< recent-posts >}}
+
+[View all posts →](/blog)
+
