@@ -21,7 +21,7 @@ A terminal-based **prayer time calculator** for Malaysia with an interactive TUI
 - **Features**: Keyboard navigation, offline operation, validated against official sources
 - **Note**: For educational use. Not production-ready
 
-![](https://raw.githubusercontent.com/hexrogue/city2coordinates/refs/heads/main/demo1.gif)
+![](https://raw.githubusercontent.com/hexrogue/PrayerTime/refs/heads/main/assets/demo.gif)
 
 > For a full walkthrough and step-by-step explanation of how I built this project, check out my [blog here](/blog/my-go-prayer-time-calculator-from-pdf-formulas-to-terminal-tui).
 
@@ -32,7 +32,7 @@ A lightweight **Go** tool that geocodes Malaysian cities and districts into lati
 - **Purpose**: Data preparation for location-aware apps (e.g., prayer time calculators)
 - **Design**: Minimal, rate-limited, offline-first data pipeline
 
-![](https://raw.githubusercontent.com/hexrogue/PrayerTime/refs/heads/main/assets/demo.gif)
+![](https://raw.githubusercontent.com/hexrogue/city2coordinates/refs/heads/main/demo1.gif)
 
 > For a full walkthrough and step-by-step explanation of how I built this project, check out my [blog here](/blog/my-go-prayer-time-caltulator.md).
 
