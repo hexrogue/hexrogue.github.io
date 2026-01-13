@@ -21,6 +21,13 @@ A terminal-based **prayer time calculator** for Malaysia with an interactive TUI
 - **Features**: Keyboard navigation, offline operation, validated against official sources
 - **Note**: For educational use. Not production-ready
 
+{{< badge content="prayer-time" color="yellow" >}}
+{{< badge content="malaysia" color="green" >}}
+{{< badge content="terminal-app" color="orange" >}}
+{{< badge content="astronomy" color="red" >}}
+{{< badge content="offline-first" color="amber" >}}
+
+
 ![](https://raw.githubusercontent.com/hexrogue/PrayerTime/refs/heads/main/assets/demo.gif)
 
 > For a full walkthrough and step-by-step explanation of how I built this project, check out my [blog here](/blog/my-go-prayer-time-calculator-from-pdf-formulas-to-terminal-tui).
@@ -32,6 +39,13 @@ A lightweight **Go** tool that geocodes Malaysian cities and districts into lati
 - **Purpose**: Data preparation for location-aware apps (e.g., prayer time calculators)
 - **Design**: Minimal, rate-limited, offline-first data pipeline
 
+{{< badge content="go" color="blue" >}}
+{{< badge content="sqlite" color="orange" >}}
+{{< badge content="geocoding" color="green" >}}
+{{< badge content="opensource" color="indigo" >}}
+{{< badge content="nominatim" color="purple" >}}
+{{< badge content="malaysia" color="yellow" >}}
+
 ![](https://raw.githubusercontent.com/hexrogue/city2coordinates/refs/heads/main/demo1.gif)
 
 > For a full walkthrough and step-by-step explanation of how I built this project, check out my [blog here](/blog/my-go-prayer-time-caltulator.md).
@@ -41,6 +55,13 @@ A **Cloudflare Workers**-based VLESS proxy system with user management via **D1 
 
 - **Tech**: TypeScript, Cloudflare Workers, D1, VLESS
 - **Use Case**: Personal infrastructure for secure tunneling
+
+{{< badge content="networking" color="green" >}}
+{{< badge content="cloudflare" color="blue" >}}
+{{< badge content="typescript" color="indigo" >}}
+{{< badge content="vless" color="purple" >}}
+{{< badge content="vpn" color="yellow" >}}
+{{< badge content="d1-database" color="amber" >}}
 
 ## 💼 Work Experience
 
@@ -54,6 +75,14 @@ A **Cloudflare Workers**-based VLESS proxy system with user management via **D1 
 - Implemented role-based auth, responsive UI, and course management dashboard
 - Optimized Lighthouse scores and reduced bundle size by 40%
 - Live Demo [SKC Education Global →](https://skc-payload.vercel.app/)
+
+{{< badge content="fullstack" color="blue" >}}
+{{< badge content="nextjs" color="indigo" >}}
+{{< badge content="tailwind" color="cyan" >}}
+{{< badge content="postgresql" color="orange" >}}
+{{< badge content="aws-s3" color="yellow" >}}
+{{< badge content="web-performance" color="green" >}}
+{{< badge content="responsive-ui" color="purple" >}}
 
 
 ## 🧰 Skills & Tools
