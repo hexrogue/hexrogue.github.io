@@ -6,6 +6,7 @@ description: "Hi, I'm Nuh. Fullstack developer and hacker wannabe. Check out my 
 params:
   author: "Muhammad Nuh"
   description: "Fullstack developer with a passion for web development, bots, and server setups."
+  email: "ikanlemas0@gmail.com"
 
   navbar:
     displayTitle: true
