@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="post-layout">
+<article class="page">
+  <header>
+    <p class="telemetry">/// {{ .Title | upper }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    {{ if eq .Type "blog" }}<p class="meta"><time>{{ .Date.Format "2006-01-02" }}</time> / {{ .ReadingTime }} MIN READ{{ with .Params.tags }} / {{ delimit . ", " }}{{ end }}</p>{{ end }}
+  </header>
+  {{ .Content }}
+  {{ if eq .Type "blog" }}
+  <nav class="post-nav">
+    {{ with .PrevInSection }}<a class="post-nav-cell" href="{{ .RelPermalink }}"><span class="meta">&lt;&lt;&lt; PREV</span><span class="post-nav-title">{{ .Title }}</span></a>{{ else }}<div class="post-nav-cell"><span class="meta">/// END OF LOG</span></div>{{ end }}
+    {{ with .NextInSection }}<a class="post-nav-cell next" href="{{ .RelPermalink }}"><span class="meta">NEXT &gt;&gt;&gt;</span><span class="post-nav-title">{{ .Title }}</span></a>{{ else }}<div class="post-nav-cell next"><span class="meta">/// END OF LOG</span></div>{{ end }}
+  </nav>
+  {{ end }}
+</article>
+<aside class="side-rail">
+  <section>
+    <h2>File data</h2>
+    {{ if eq .Type "blog" }}<p><time>{{ .Date.Format "2006-01-02" }}</time></p><p>{{ .ReadingTime }} MIN READ</p>{{ with .Params.tags }}<p>{{ delimit . " / " }}</p>{{ end }}{{ else }}<p>{{ .Title | upper }}</p>{{ end }}
+  </section>
+  {{ with .Fragments.Headings }}
+  <section>
+    <h2>On this page</h2>
+    <nav>{{ $.TableOfContents }}</nav>
+  </section>
+  {{ end }}
+</aside>
+</div>
+{{ end }}

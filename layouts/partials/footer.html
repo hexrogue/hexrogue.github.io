@@ -1,0 +1,4 @@
+<footer class="site-footer">
+  <span>/// &copy; {{ now.Year }} {{ .Site.Params.author.name | default .Site.Title }}</span>
+  {{ with .Site.Params.social.github }}<span><a href="https://github.com/{{ . }}">GITHUB</a></span>{{ end }}
+</footer>

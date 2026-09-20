@@ -1,0 +1,2 @@
+{{- $icons := dict "mail" "@" "phone" "TEL" "github" "GH" "download" "DL" "lock-closed" "[LOCKED]" -}}
+<span class="ico">[{{ index $icons (.Get 0) | default (.Get 0) }}]</span>

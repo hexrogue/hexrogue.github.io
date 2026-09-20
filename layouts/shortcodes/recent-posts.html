@@ -1,0 +1,17 @@
+{{ $posts := where site.RegularPages "Type" "blog" | first 6 }}
+
+{{ if $posts }}
+<div class="blog-grid">
+  {{ range $i, $p := $posts }}
+  <a href="{{ $p.RelPermalink }}" class="blog-card">
+    <p class="file-no">FILE_{{ printf "%02d" (add $i 1) }} /// <time>{{ $p.Date.Format "2006-01-02" }}</time></p>
+    <h3>{{ $p.Title }}</h3>
+    <p class="meta">{{ $p.ReadingTime }} MIN READ</p>
+    <p>{{ $p.Summary | plainify | truncate 150 }}</p>
+    <span class="read-more">&gt;&gt;&gt; OPEN FILE</span>
+  </a>
+  {{ end }}
+</div>
+{{ else }}
+<p>No posts yet.</p>
+{{ end }}

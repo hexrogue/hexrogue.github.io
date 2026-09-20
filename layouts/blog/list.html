@@ -1,0 +1,72 @@
+{{ define "main" }}
+<div class="page">
+  <p class="telemetry">/// {{ .Title | upper }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <div class="filter-row" role="group" aria-label="Filter by category">
+    <button data-filter="all" aria-pressed="true">[ ALL ]</button>
+    {{ range $tag, $_ := $.Site.Taxonomies.tags }}
+    <button data-filter="{{ $tag | urlize }}" aria-pressed="false">[ {{ $tag | upper }} ]</button>
+    {{ end }}
+  </div>
+  <ul class="index-list" id="filter-target">
+    {{ range .Pages.ByDate.Reverse }}
+    <li data-tags="{{ with .Params.tags }}{{ delimit (apply . "urlize" ".") " " }}{{ end }}">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="meta"><time>{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.tags }} / {{ delimit . ", " }}{{ end }}</span>
+    </li>
+    {{ end }}
+  </ul>
+  <p class="meta" id="filter-empty" hidden>/// NO FILES MATCH THIS FILTER</p>
+  <nav class="pager" id="pager" aria-label="Blog pages">
+    <button id="pager-prev" type="button">[ &lt;&lt;&lt; PREV ]</button>
+    <span class="meta" id="pager-info">PAGE 1 / 1</span>
+    <button id="pager-next" type="button">[ NEXT &gt;&gt;&gt; ]</button>
+  </nav>
+</div>
+<script>
+(function () {
+  var btns = document.querySelectorAll('.filter-row button');
+  var items = Array.prototype.slice.call(document.querySelectorAll('#filter-target li'));
+  var empty = document.getElementById('filter-empty');
+  var pager = document.getElementById('pager');
+  var prev = document.getElementById('pager-prev');
+  var next = document.getElementById('pager-next');
+  var info = document.getElementById('pager-info');
+  var PAGE = 12, page = 1, filter = 'all';
+  function matches(li) {
+    return filter === 'all' || (li.getAttribute('data-tags') || '').split(' ').indexOf(filter) > -1;
+  }
+  function render() {
+    var vis = items.filter(matches);
+    var total = Math.max(1, Math.ceil(vis.length / PAGE));
+    if (page > total) page = total;
+    items.forEach(function (li) {
+      var show = matches(li);
+      if (show && filter === 'all') {
+        var idx = vis.indexOf(li);
+        show = idx >= (page - 1) * PAGE && idx < page * PAGE;
+      }
+      li.hidden = !show;
+    });
+    empty.hidden = vis.length > 0;
+    pager.hidden = filter !== 'all' || vis.length <= PAGE;
+    info.textContent = 'PAGE ' + page + ' / ' + total;
+    prev.disabled = page <= 1;
+    next.disabled = page >= total;
+  }
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      btns.forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      filter = b.getAttribute('data-filter');
+      page = 1;
+      render();
+    });
+  });
+  prev.addEventListener('click', function () { if (page > 1) { page--; render(); } });
+  next.addEventListener('click', function () { if (page < Math.ceil(items.filter(matches).length / PAGE)) { page++; render(); } });
+  render();
+})();
+</script>
+{{ end }}
