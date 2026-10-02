@@ -3,6 +3,7 @@ date: '2026-08-30T00:00:00+08:00'
 title: 'Tenet is easy once you stop thinking forwards'
 description: 'My hypothesis: Tenet is not confusing. You are just watching half the film in the wrong direction.'
 tags: ['movies', 'tenet', 'theory']
+author: nuh
 ---
 
 People call Tenet confusing. I think it is the simplest Nolan film, and that is exactly why it confuses everyone. My hypothesis: you are not supposed to follow the plot forwards. You are supposed to follow the entropy.

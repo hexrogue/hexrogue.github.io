@@ -2,6 +2,7 @@
 date: '2026-02-03T00:00:00+08:00'
 title: 'Sun Math: Prayer Times from a Research Paper'
 description: 'How I turned a math paper about the Sun into a working prayer time calculator. No APIs, just the Sun and some code.'
+author: nuh
 ---
 
 ## The problem

@@ -3,6 +3,7 @@ date: '2026-01-12T00:00:00+08:00'
 title: 'The Uniform Is Not a Personality'
 description: 'Report counters, confession farming, and roadblock economics: the reality of Malaysian cops, plus what I would steal from America.'
 tags: ['rant', 'malaysia']
+author: nuh
 ---
 
 First, the disclaimer so nobody burns my house down. Some cops are good. Professional, calm, do the paperwork, go home. This post is not about them. If you are a good cop, you already know exactly which colleagues this is about. Everyone else, pull up a chair.

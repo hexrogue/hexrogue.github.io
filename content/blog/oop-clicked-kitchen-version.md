@@ -3,6 +3,7 @@ date: '2026-09-17T00:00:00+08:00'
 title: 'OOP Clicked When I Stopped Memorizing'
 description: 'Study notes, plain version: classes are cookie cutters, objects are cookies, and the four pillars in one paragraph each.'
 tags: ['study', 'oop']
+author: nuh
 ---
 
 Object oriented programming confused me exactly as long as I tried to memorize definitions. Encapsulation, inheritance, polymorphism. Words to chant before exams. Then someone explained it with a kitchen, and it clicked in a minute. Passing that on.

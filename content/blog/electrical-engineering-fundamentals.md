@@ -3,6 +3,7 @@ date: '2026-10-02T00:00:00+08:00'
 title: 'Electrical Engineering Fundamentals, Without the Headache'
 description: 'Study notes, plain version: voltage is pressure, current is flow, and everything else is just fancy plumbing with math.'
 tags: ['study', 'electronics', 'ee']
+author: nuh
 ---
 
 I am a software guy. My world is if-else and semicolons. Then I touched electrical engineering and realized all my code runs on literal lightning we bullied into doing math. So I learned the basics. Here is my notebook, translated into human.

@@ -3,6 +3,7 @@ date: '2026-01-25T00:00:00+08:00'
 title: 'Web Dev Tips: What to Avoid'
 description: 'The mistakes every new web developer makes, including past me. Save yourself the evenings.'
 tags: ['web', 'tips']
+author: nuh
 ---
 
 Nobody teaches you web dev by listing what not to do. So this is my list, earned the hard way. Every item below cost me at least one evening.

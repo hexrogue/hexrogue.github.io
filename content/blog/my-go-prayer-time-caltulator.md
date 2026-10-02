@@ -3,6 +3,7 @@ date: '2026-01-12T00:00:00+08:00'
 title: 'Offline Prayer Times in Go'
 description: "How I built a prayer time app that works with zero internet. Just your location, the Sun, and math."
 tags: ['go', 'cli', 'astronomy', 'bubbletea', 'malaysia']
+author: nuh
 ---
 
 ## The problem

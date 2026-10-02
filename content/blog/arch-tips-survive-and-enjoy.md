@@ -3,6 +3,7 @@ date: '2026-04-28T00:00:00+08:00'
 title: 'Arch Linux Tips: Survive and Enjoy'
 description: 'Read the news before updating, keep an LTS kernel, and other habits that keep Arch boring.'
 tags: ['arch', 'linux', 'tips']
+author: nuh
 ---
 
 Arch has a reputation for breaking. Mine breaks about twice a year, takes twenty minutes to fix, and teaches me something each time. The secret is not skill. It is habits, all of them boring.

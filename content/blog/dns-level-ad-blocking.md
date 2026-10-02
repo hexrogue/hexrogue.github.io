@@ -3,6 +3,7 @@ date: '2026-09-01T00:00:00+08:00'
 title: 'I Deleted Ads at the DNS Level'
 description: 'Sequel to the TV spying post: Pi-hole style DNS filtering for the whole house, explained simply.'
 tags: ['homelab', 'networking', 'dns']
+author: nuh
 ---
 
 <figure>

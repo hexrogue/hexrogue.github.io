@@ -3,6 +3,7 @@ date: '2026-09-20T00:00:00+08:00'
 title: 'I Learned to Code on a Phone'
 description: '2020, no laptop, just nano and Termux. How a phone keyboard taught me Python, scraping, and security.'
 tags: ['story', 'termux', 'python']
+author: nuh
 ---
 
 In 2020 I had no laptop. What I had was an Android phone, a charger that only worked at one angle, and a lot of free time. Everyone said you need a real computer to learn programming. My phone had other plans. This is the story of nano, Termux, and the year I coded with my thumbs.

@@ -3,6 +3,7 @@ date: '2026-03-20T00:00:00+08:00'
 title: 'Wireshark Tips: Read Your Own Network'
 description: 'Your network is talking about you. How to listen in with Wireshark:'
 tags: ['wireshark', 'networking', 'tips']
+author: nuh
 ---
 
 Wireshark shows you every packet crossing your network card. It looks overwhelming for exactly three minutes. Then it becomes a superpower. Starting without drowning:

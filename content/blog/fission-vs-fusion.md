@@ -3,6 +3,7 @@ date: '2026-09-20T00:00:00+08:00'
 title: 'Fission and Fusion, Explained Like You Are Five'
 description: 'Why breaking atoms apart and crushing them together both release stupid amounts of energy, how power plants use each, and why fusion is always 30 years away.'
 tags: ['physics', 'energy', 'explainer']
+author: nuh
 ---
 
 The sun is a fusion bomb that never stops exploding, held together by its own weight. Humans learned to split atoms before we understood them, and we are still learning to squeeze them. This is the story of both, no physics degree needed.

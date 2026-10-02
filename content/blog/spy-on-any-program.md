@@ -3,6 +3,7 @@ date: '2026-09-12T00:00:00+08:00'
 title: 'How to Spy on Any Program (Legally)'
 description: 'Strings, syscalls, packets, and debuggers: the complete method for finding out what any program really does.'
 tags: ['security', 'linux', 'debugging', 'reversing']
+author: nuh
 ---
 
 Every program lies about what it does. Not maliciously. It just never tells you the full story. The installer says "quick setup" while writing files in six directories. The app says "no account needed" while phoning three analytics servers.

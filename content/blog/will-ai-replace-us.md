@@ -3,6 +3,7 @@ date: '2026-10-02T00:00:00+08:00'
 title: 'Will AI Replace Us? Nah, But It Will Expose Us'
 description: 'Everyone panicking about AI taking jobs missed the point. AI wont replace you. Someone using AI will. My honest take as a dev.'
 tags: ['ai', 'rant', 'career']
+author: nuh
 ---
 
 Ngl, I am tired of this question. Every family gathering now: "Nuh, AI can code already right? So programmers habis la?" Bro. Chill.

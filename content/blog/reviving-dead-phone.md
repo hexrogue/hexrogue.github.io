@@ -3,6 +3,7 @@ date: '2026-08-19T00:00:00+08:00'
 title: 'Reviving a Dead Phone'
 description: 'An abandoned Android, an unlocked bootloader, and a custom ROM. E-waste versus an evening of fastboot.'
 tags: ['android', 'rooting']
+author: nuh
 ---
 
 My old phone stopped getting updates two years ago. Still good hardware, perfect for a home dashboard or a test device, except the stock ROM got slower with every year and the battery stats blamed everything except itself. So I unlocked the bootloader and gave it a second life.

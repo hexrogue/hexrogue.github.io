@@ -3,6 +3,7 @@ date: '2026-09-09T00:00:00+08:00'
 title: 'How Your CPU Reads Code'
 description: 'Study notes, plain version: fetch, decode, execute, repeat billions of times. Plus why binary.'
 tags: ['study', 'cpu']
+author: nuh
 ---
 
 Computer organization sounded dry until week two, when I realized it answers the best question in computing: how do words I type become electricity doing math. My notebook version, short:

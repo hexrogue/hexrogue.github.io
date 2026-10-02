@@ -3,6 +3,7 @@ date: '2026-06-25T00:00:00+08:00'
 title: 'Dune Is About Single Points of Failure'
 description: 'My hypothesis: the spice is just a metaphor for every system with exactly one load bearing part.'
 tags: ['movies', 'dune', 'theory']
+author: nuh
 ---
 
 <figure>

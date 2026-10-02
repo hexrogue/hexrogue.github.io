@@ -3,6 +3,7 @@ date: '2026-05-28T00:00:00+08:00'
 title: 'The One-Number Bug That Leaked Orders'
 description: 'One changed number in a URL, and I was reading strangers receipts. A bug hunting story.'
 tags: ['security', 'pentesting', 'bugbounty']
+author: nuh
 ---
 
 Some bugs crash your app. The scary ones politely hand you other people's data. I found one of those in a test shop, and it took changing a single number.

@@ -2,6 +2,7 @@
 date: '2026-04-15T15:30:59+08:00'
 draft: false
 title: 'What I Learned From the Big Short'
+author: nuh
 ---
 
 A movie about the 2008 crash made me pause every twenty minutes to google things. The crash, explained like you are five, plus the part the movie gets wrong:

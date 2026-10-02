@@ -3,6 +3,7 @@ date: '2026-09-20T00:00:00+08:00'
 title: 'My Bank Locked Me Out for Typing Like a Human'
 description: 'Three typos and a branch visit later: why Malaysian banking apps treat you like a hacker and what I would do if Bank Negara let me near the rules.'
 tags: ['rant', 'malaysia', 'banking', 'security']
+author: nuh
 ---
 
 Let me say this first so nobody gets confused. Malaysia is great. Food is elite, Grab shows up in four minutes, my MyKad renews faster than most countries ship a parcel. Then there is online banking, which feels designed by someone who has never forgotten a password in their life.

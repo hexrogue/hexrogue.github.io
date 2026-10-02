@@ -3,6 +3,7 @@ date: '2026-01-10T00:00:00+08:00'
 title: 'I Pointed Shodan at My Own IP'
 description: 'What the internet sees when it looks at you: open ports, chatty banners, and one port forward I forgot about.'
 tags: ['security', 'homelab', 'networking']
+author: nuh
 ---
 
 Last month I searched for myself on the internet. Not my name. My IP address. What came back was a list of my open doors, written up neatly like a menu. I had published myself and never noticed.

@@ -3,6 +3,7 @@ date: '2026-09-15T00:00:00+08:00'
 title: 'Brand Was Right: An Interstellar Theory'
 description: 'The most mocked speech in Interstellar is secretly the thesis of the whole film. My case, in three parts.'
 tags: ['movies', 'interstellar', 'theory']
+author: nuh
 ---
 
 Everyone quotes Interstellar for the physics. Nobody defends the scene where Dr. Brand says love might be an artifact of a higher dimension. Audiences laughed. Physicists rolled their eyes. I have rewatched this film four times and I am now convinced that speech is the entire movie in disguise. My hypothesis, in three parts:

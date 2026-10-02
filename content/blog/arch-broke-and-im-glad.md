@@ -3,6 +3,7 @@ date: '2026-07-27T00:00:00+08:00'
 title: 'Arch Broke, and I Am Glad'
 description: 'A routine update ate my bootloader entry. Fixing it from a TTY taught me more than the install ever did.'
 tags: ['arch', 'linux']
+author: nuh
 ---
 
 Yes, Arch is my daily driver. No, I will not shut up about it. But this is not a conversion post. This is about the Tuesday an update left me staring at a boot menu with no Arch in it, and why I am glad it happened.

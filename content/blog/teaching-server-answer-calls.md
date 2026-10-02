@@ -3,6 +3,7 @@ date: '2026-07-10T00:00:00+08:00'
 title: 'Teaching a Server to Answer Calls'
 description: 'The WhatsAPI build story: from missed messages to a Go gateway that picks up the phone.'
 tags: ['go', 'projects', 'voip']
+author: nuh
 ---
 
 <figure>

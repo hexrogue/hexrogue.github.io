@@ -3,6 +3,7 @@ date: '2026-02-18T00:00:00+08:00'
 title: 'Reverse Engineering Tips for Beginners'
 description: 'What I wish someone told me before my first binary: strings first, rename everything, debugger early.'
 tags: ['reversing', 'tips', 'security']
+author: nuh
 ---
 
 People hear reverse engineering and picture hooded geniuses. The reality is calmer. It is reading, renaming, and testing guesses. The workflow that works:

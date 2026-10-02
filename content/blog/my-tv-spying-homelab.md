@@ -3,6 +3,7 @@ date: '2026-06-08T00:00:00+08:00'
 title: 'My TV Was Spying on Me'
 description: 'How a cheap OpenWrt router and Wireshark turned my living room into a surveillance audit.'
 tags: ['homelab', 'networking', 'openwrt']
+author: nuh
 ---
 
 I bought a used router to flash OpenWrt on a bored Saturday. The plan was simple: better WiFi. Three weeks later I had VLANs, WireGuard back home, and a spreadsheet of every domain my TV talks to at 3 AM. This is how that happens. Nobody plans a homelab. It accretes.

@@ -3,6 +3,7 @@ date: '2026-09-20T00:00:00+08:00'
 title: 'Radare2: The Terminal Gremlin That Reads Binaries'
 description: 'Ghidra is a cruise ship. Radare2 is a jetski you assemble mid-ocean. The commands, the graph view, patching, debugging, and r2pipe.'
 tags: ['reversing', 'security', 'radare2']
+author: nuh
 ---
 
 Everyone told me to learn Ghidra. I learned the terminal gremlin instead. Ghidra is a cruise ship: big, comfortable, everything labeled. Radare2 is a jetski you assemble mid-ocean while it insults you. I use both now, but r2 is the one I reach for first, and this is the guide I wish existed when I started.

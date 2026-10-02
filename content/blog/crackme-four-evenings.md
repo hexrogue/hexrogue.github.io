@@ -3,6 +3,7 @@ date: '2026-05-14T00:00:00+08:00'
 title: 'A Four-Evening Crackme'
 description: 'Ghidra, GDB, and what a small binary reminded me after years of CTFs.'
 tags: ['reversing', 'security', 'ghidra']
+author: nuh
 ---
 
 After years of CTFs, a tiny crackme that asks for a serial key should have been a one evening job. A friend sent it over and said it would take an hour. It took four. I regret nothing.

@@ -5,7 +5,7 @@
     <p class="telemetry">/// {{ .Title | upper }}</p>
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
-    {{ if eq .Type "blog" }}<p class="meta"><time>{{ .Date.Format "2006-01-02" }}</time> / {{ .ReadingTime }} MIN READ{{ with .Params.tags }} / {{ delimit . ", " }}{{ end }}</p>{{ end }}
+    {{ if eq .Type "blog" }}<p class="meta">BY {{ .Params.author | default "nuh" | upper }} / <time>{{ .Date.Format "2006-01-02" }}</time> / {{ .ReadingTime }} MIN READ{{ with .Params.tags }} / {{ delimit . ", " }}{{ end }}</p>{{ end }}
   </header>
   {{ .Content }}
   {{ if eq .Type "blog" }}
@@ -18,7 +18,7 @@
 <aside class="side-rail">
   <section>
     <h2>File data</h2>
-    {{ if eq .Type "blog" }}<p><time>{{ .Date.Format "2006-01-02" }}</time></p><p>{{ .ReadingTime }} MIN READ</p>{{ with .Params.tags }}<p>{{ delimit . " / " }}</p>{{ end }}{{ else }}<p>{{ .Title | upper }}</p>{{ end }}
+    {{ if eq .Type "blog" }}<p>BY {{ .Params.author | default "nuh" | upper }}</p><p><time>{{ .Date.Format "2006-01-02" }}</time></p><p>{{ .ReadingTime }} MIN READ</p>{{ with .Params.tags }}<p>{{ delimit . " / " }}</p>{{ end }}{{ else }}<p>{{ .Title | upper }}</p>{{ end }}
   </section>
   {{ with .Fragments.Headings }}
   <section>
