@@ -288,3 +288,9 @@ a.post-nav-cell:hover .post-nav-title { color: var(--brut-red); }
 
 .tech-tags { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brut-dim); }
 .ico { color: var(--brut-red); font-size: 0.75rem; letter-spacing: 0.08em; }
+
+/* Suggested-listening audio box: bordered panel, native controls */
+.audio-box { border: 1px solid var(--brut-line); background: var(--brut-panel); padding: 1rem 1.25rem; margin: 1.5rem 0; }
+.audio-box .meta { margin: 0 0 0.5rem; }
+.audio-box p { margin: 0.25rem 0 0.75rem; font-size: 0.9rem; }
+.audio-box audio { width: 100%; display: block; }
