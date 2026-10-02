@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.Language.Locale | default "en-us" }}">
   {{- partial "head.html" . -}}
   <body>
     <a href="#content" class="skip-link">Skip to content</a>

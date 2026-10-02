@@ -3,3 +3,6 @@
 /.hugo_build.lock
 portfolio-next/node_modules/
 portfolio-next/
+.env
+.env.*
+!.env.example
