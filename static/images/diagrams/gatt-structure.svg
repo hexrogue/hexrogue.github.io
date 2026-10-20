@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="430" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">GATT: WHAT A CONNECTED DEVICE EXPOSES</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="56" width="150" height="90"/>
+<rect x="200" y="56" width="210" height="90"/>
+<rect x="440" y="56" width="220" height="90"/>
+</g>
+<text x="36" y="88" fill="#EAEAEA">device</text>
+<text x="36" y="114" fill="#a8a8a8" font-size="13">a peripheral</text>
+<text x="216" y="88" fill="#EAEAEA">service 0x180D</text>
+<text x="216" y="114" fill="#a8a8a8" font-size="13">heart rate</text>
+<text x="456" y="88" fill="#EAEAEA">characteristic 0x2A37</text>
+<text x="456" y="114" fill="#a8a8a8" font-size="13">read + notify</text>
+
+<line x1="170" y1="101" x2="198" y2="101" stroke="#2a2a2a"/>
+<line x1="410" y1="101" x2="438" y2="101" stroke="#2a2a2a"/>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="200" y="182" width="210" height="90"/>
+<rect x="440" y="182" width="220" height="90"/>
+<rect x="200" y="308" width="210" height="80"/>
+<rect x="440" y="308" width="220" height="80"/>
+</g>
+<text x="216" y="214" fill="#EAEAEA">service 0x180F</text>
+<text x="216" y="240" fill="#a8a8a8" font-size="13">battery</text>
+<text x="456" y="214" fill="#EAEAEA">characteristic 0x2A19</text>
+<text x="456" y="240" fill="#a8a8a8" font-size="13">read</text>
+<text x="216" y="340" fill="#EAEAEA">characteristic 0x2A39</text>
+<text x="216" y="366" fill="#a8a8a8" font-size="13">write</text>
+<text x="456" y="340" fill="#a8a8a8" font-size="13">the identifiers are public,</text>
+<text x="456" y="366" fill="#a8a8a8" font-size="13">so the job is not secret</text>
+
+<line x1="410" y1="227" x2="438" y2="227" stroke="#2a2a2a"/>
+<line x1="410" y1="348" x2="438" y2="348" stroke="#2a2a2a"/>
+
+<text x="20" y="414" fill="#FF2A2A" font-size="14">notify</text>
+<text x="96" y="414" fill="#a8a8a8" font-size="14">means the device pushes updates without the phone asking.</text>
+</svg>

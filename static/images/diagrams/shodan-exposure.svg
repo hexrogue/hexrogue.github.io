@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="400" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">WHAT SHODAN SAID ABOUT ME</text>
+<defs>
+<marker id="sh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#EAEAEA"/>
+</marker>
+</defs>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="80" width="150" height="110"/>
+<rect x="210" y="50" width="250" height="180"/>
+<rect x="500" y="80" width="160" height="110"/>
+</g>
+<text x="36" y="112" fill="#EAEAEA">your network</text>
+<text x="36" y="136" fill="#a8a8a8" font-size="13">one public IP</text>
+<text x="36" y="156" fill="#a8a8a8" font-size="13">three open doors</text>
+
+<line x1="172" y1="135" x2="206" y2="135" stroke="#EAEAEA" marker-end="url(#sh)"/>
+
+<text x="226" y="80" fill="#EAEAEA">what Shodan wrote down</text>
+<g fill="#FF2A2A" font-size="13">
+<text x="226" y="116">22    ssh 8.2</text>
+<text x="226" y="146">8080  media server</text>
+<text x="226" y="176">80    router admin</text>
+</g>
+<text x="226" y="206" fill="#a8a8a8" font-size="13">every one of them a name tag</text>
+
+<line x1="462" y1="135" x2="496" y2="135" stroke="#EAEAEA" marker-end="url(#sh)"/>
+
+<text x="516" y="112" fill="#EAEAEA">the stranger</text>
+<text x="516" y="136" fill="#a8a8a8" font-size="13">versions to match,</text>
+<text x="516" y="156" fill="#a8a8a8" font-size="13">doors to try</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="266" width="640" height="98"/>
+</g>
+<text x="36" y="296" fill="#FF2A2A" font-size="13">The fix took one evening and no genius: close the port forwards, move remote</text>
+<text x="36" y="320" fill="#a8a8a8" font-size="13">access behind WireGuard, keys instead of passwords, and update everything.</text>
+<text x="36" y="344" fill="#EAEAEA" font-size="13">A week later the search came back empty, and empty is the whole goal.</text>
+</svg>

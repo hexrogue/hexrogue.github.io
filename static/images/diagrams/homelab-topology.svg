@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 450" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="450" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">ONE BOX, SEVERAL SEALED NETWORKS</text>
+<defs>
+<marker id="hg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#EAEAEA"/>
+</marker>
+</defs>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="270" y="48" width="140" height="54"/>
+<rect x="180" y="138" width="320" height="76"/>
+<rect x="20" y="138" width="140" height="76"/>
+</g>
+<text x="300" y="82" fill="#EAEAEA">ISP</text>
+<text x="200" y="172" fill="#EAEAEA">OpenWrt router</text>
+<text x="200" y="196" fill="#a8a8a8" font-size="13">firewall, DHCP, WireGuard</text>
+<text x="36" y="168" fill="#EAEAEA">Raspberry Pi</text>
+<text x="36" y="192" fill="#a8a8a8" font-size="13">DNS filter + log</text>
+
+<line x1="340" y1="102" x2="340" y2="134" stroke="#EAEAEA" marker-end="url(#hg)"/>
+<line x1="180" y1="176" x2="164" y2="176" stroke="#a8a8a8" stroke-dasharray="5 4" marker-end="url(#hg)"/>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="290" width="200" height="90"/>
+<rect x="240" y="290" width="200" height="90"/>
+<rect x="460" y="290" width="200" height="90"/>
+</g>
+<text x="36" y="322" fill="#EAEAEA">trusted LAN</text>
+<text x="36" y="346" fill="#a8a8a8" font-size="13">laptops, phone</text>
+<text x="256" y="322" fill="#EAEAEA">IoT VLAN</text>
+<text x="256" y="346" fill="#a8a8a8" font-size="13">plugs and bulbs,</text>
+<text x="256" y="366" fill="#a8a8a8" font-size="13">internet only</text>
+<text x="476" y="322" fill="#EAEAEA">TV VLAN</text>
+<text x="476" y="346" fill="#a8a8a8" font-size="13">one television,</text>
+<text x="476" y="366" fill="#a8a8a8" font-size="13">no LAN access</text>
+
+<g stroke="#EAEAEA" marker-end="url(#hg)">
+<line x1="250" y1="214" x2="122" y2="286"/>
+<line x1="340" y1="214" x2="340" y2="286"/>
+<line x1="430" y1="214" x2="558" y2="286"/>
+</g>
+
+<text x="20" y="414" fill="#a8a8a8" font-size="13">The Pi already ran something, so filtering cost one evening and no new hardware.</text>
+<text x="20" y="438" fill="#a8a8a8" font-size="13">Away from home, the laptop drives back in through the same WireGuard tunnel.</text>
+</svg>

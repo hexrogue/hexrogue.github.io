@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 450" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="450" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">THE LIE HAS LAYERS</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="52" width="640" height="124"/>
+<rect x="20" y="214" width="640" height="124"/>
+<rect x="20" y="356" width="640" height="56"/>
+</g>
+<text x="36" y="76" fill="#a8a8a8" font-size="13">user space, where every program believes the lie</text>
+<g stroke="#2a2a2a" fill="#0f0f0f">
+<rect x="40" y="92" width="190" height="64"/>
+<rect x="248" y="92" width="190" height="64"/>
+<rect x="456" y="92" width="190" height="64"/>
+</g>
+<text x="56" y="120" fill="#EAEAEA">chrome</text>
+<text x="56" y="142" fill="#a8a8a8" font-size="13">owns the cpu, obviously</text>
+<text x="264" y="120" fill="#EAEAEA">your game</text>
+<text x="264" y="142" fill="#a8a8a8" font-size="13">owns the memory</text>
+<text x="472" y="120" fill="#EAEAEA">music player</text>
+<text x="472" y="142" fill="#a8a8a8" font-size="13">owns the speakers</text>
+
+<line x1="20" y1="196" x2="660" y2="196" stroke="#FF2A2A" stroke-dasharray="6 5"/>
+<text x="340" y="190" fill="#FF2A2A" font-size="13" text-anchor="middle">syscalls: the only door a program may knock on</text>
+
+<text x="36" y="238" fill="#a8a8a8" font-size="13">kernel, the manager handing out slices of everything</text>
+<g stroke="#2a2a2a" fill="#0f0f0f">
+<rect x="40" y="254" width="190" height="64"/>
+<rect x="248" y="254" width="190" height="64"/>
+<rect x="456" y="254" width="190" height="64"/>
+</g>
+<text x="56" y="282" fill="#EAEAEA">scheduler</text>
+<text x="56" y="304" fill="#a8a8a8" font-size="13">who runs, and how long</text>
+<text x="264" y="282" fill="#EAEAEA">memory manager</text>
+<text x="264" y="304" fill="#a8a8a8" font-size="13">fake addresses to real</text>
+<text x="472" y="282" fill="#EAEAEA">drivers</text>
+<text x="472" y="304" fill="#a8a8a8" font-size="13">talk to the actual metal</text>
+
+<text x="36" y="392" fill="#EAEAEA">CPU cores · RAM · disks · network cards</text>
+
+<text x="20" y="436" fill="#a8a8a8" font-size="13">Every process gets a fake machine and a time slice, and never notices the swap.</text>
+</svg>

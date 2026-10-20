@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="400" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">FETCH, DECODE, EXECUTE, FOREVER</text>
+<defs>
+<marker id="cp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#EAEAEA"/>
+</marker>
+</defs>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="80" width="190" height="70"/>
+<rect x="245" y="80" width="190" height="70"/>
+<rect x="470" y="80" width="190" height="70"/>
+</g>
+<text x="36" y="110" fill="#EAEAEA">fetch</text>
+<text x="36" y="136" fill="#a8a8a8" font-size="13">grab the next number</text>
+<text x="261" y="110" fill="#EAEAEA">decode</text>
+<text x="261" y="136" fill="#a8a8a8" font-size="13">work out the meaning</text>
+<text x="486" y="110" fill="#EAEAEA">execute</text>
+<text x="486" y="136" fill="#a8a8a8" font-size="13">do it</text>
+
+<g stroke="#EAEAEA" marker-end="url(#cp)">
+<line x1="212" y1="115" x2="241" y2="115"/>
+<line x1="437" y1="115" x2="466" y2="115"/>
+</g>
+<polyline points="565,152 565,196 115,196 115,152" fill="none" stroke="#FF2A2A" stroke-width="2" marker-end="url(#cp)"/>
+<text x="340" y="220" fill="#FF2A2A" font-size="13" text-anchor="middle">the next instruction, three billion times a second</text>
+
+<text x="20" y="262" fill="#a8a8a8" font-size="13">memory, from fast and tiny to slow and huge</text>
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="276" width="190" height="74"/>
+<rect x="245" y="276" width="190" height="74"/>
+<rect x="470" y="276" width="190" height="74"/>
+</g>
+<text x="36" y="304" fill="#EAEAEA">registers</text>
+<text x="36" y="326" fill="#a8a8a8" font-size="13">the pockets, about 1 ns</text>
+<text x="261" y="304" fill="#EAEAEA">RAM</text>
+<text x="261" y="326" fill="#a8a8a8" font-size="13">the desk, about 100 ns</text>
+<text x="486" y="304" fill="#EAEAEA">SSD</text>
+<text x="486" y="326" fill="#a8a8a8" font-size="13">the cabinet, 100 µs</text>
+
+<text x="20" y="384" fill="#a8a8a8" font-size="13">Everything else in the course is how to keep the loop from waiting on memory.</text>
+</svg>

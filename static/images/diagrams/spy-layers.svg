@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 450" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="450" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">FIVE LAYERS, CHEAPEST FIRST</text>
+<text x="470" y="30" fill="#a8a8a8" font-size="13">each one covers the last</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="52" width="640" height="54"/>
+<rect x="20" y="118" width="640" height="54"/>
+<rect x="20" y="184" width="640" height="54"/>
+<rect x="20" y="250" width="640" height="54"/>
+<rect x="20" y="316" width="640" height="54"/>
+</g>
+<text x="36" y="86" fill="#FF2A2A">strings</text>
+<text x="170" y="86" fill="#a8a8a8" font-size="13">readable text: urls, keys, error messages</text>
+<text x="36" y="152" fill="#FF2A2A">strace</text>
+<text x="170" y="152" fill="#a8a8a8" font-size="13">every syscall: files opened, connections made</text>
+<text x="36" y="218" fill="#FF2A2A">wireshark</text>
+<text x="170" y="218" fill="#a8a8a8" font-size="13">where packets go, how often, how big</text>
+<text x="36" y="284" fill="#FF2A2A">gdb</text>
+<text x="170" y="284" fill="#a8a8a8" font-size="13">values in registers at the moment of the check</text>
+<text x="36" y="350" fill="#FF2A2A">/proc</text>
+<text x="170" y="350" fill="#a8a8a8" font-size="13">open files, sockets, the memory map, ghost binaries</text>
+
+<text x="20" y="404" fill="#EAEAEA" font-size="13">Strings miss behaviour. Syscalls miss contents. Packets miss logic.</text>
+<text x="20" y="428" fill="#a8a8a8" font-size="13">Most mysteries die at the second layer. The survivors are worth writing about.</text>
+</svg>

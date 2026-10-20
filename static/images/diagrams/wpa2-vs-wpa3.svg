@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="430" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#EAEAEA">WPA2</text>
+<text x="350" y="30" font-size="17" fill="#FF2A2A">WPA3</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="46" width="310" height="250"/>
+<rect x="350" y="46" width="310" height="250"/>
+</g>
+
+<g fill="#a8a8a8">
+<text x="36" y="80">passphrase</text>
+<text x="36" y="130">PBKDF2, 4096 rounds</text>
+<text x="36" y="180">PMK</text>
+<text x="36" y="230">four-way handshake</text>
+<text x="36" y="272" fill="#EAEAEA">session keys</text>
+</g>
+<g stroke="#2a2a2a">
+<line x1="36" y1="92" x2="314" y2="92"/>
+<line x1="36" y1="142" x2="314" y2="142"/>
+<line x1="36" y1="192" x2="314" y2="192"/>
+<line x1="36" y1="242" x2="314" y2="242"/>
+</g>
+
+<g fill="#a8a8a8">
+<text x="366" y="80">passphrase</text>
+<text x="366" y="130">SAE exchange</text>
+<text x="366" y="180">fresh key per session</text>
+<text x="366" y="230">forward secrecy</text>
+<text x="366" y="272" fill="#EAEAEA">session keys</text>
+</g>
+<g stroke="#2a2a2a">
+<line x1="366" y1="92" x2="644" y2="92"/>
+<line x1="366" y1="142" x2="644" y2="142"/>
+<line x1="366" y1="192" x2="644" y2="192"/>
+<line x1="366" y1="242" x2="644" y2="242"/>
+</g>
+
+<text x="20" y="322" fill="#FF2A2A" font-size="13">a capture lets you test guesses offline</text>
+<text x="350" y="322" fill="#a8a8a8" font-size="13">a capture is useless offline</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="344" width="640" height="76"/>
+</g>
+<text x="36" y="372" fill="#EAEAEA" font-size="14">PMF: optional in WPA2, mandatory in WPA3. It signs management frames, so a</text>
+<text x="36" y="396" fill="#EAEAEA" font-size="14">forged deauth dies. Transition mode keeps the WPA2 path alive on the same</text>
+<text x="36" y="416" fill="#a8a8a8" font-size="13">passphrase, so the offline attack survives.</text>
+</svg>

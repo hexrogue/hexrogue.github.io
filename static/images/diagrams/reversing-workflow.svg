@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 450" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="450" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">THE REVERSING LOOP</text>
+<defs>
+<marker id="rv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#EAEAEA"/>
+</marker>
+</defs>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="70" width="430" height="70"/>
+<rect x="20" y="172" width="430" height="70"/>
+<rect x="20" y="274" width="430" height="70"/>
+</g>
+<text x="36" y="100" fill="#EAEAEA">1. strings</text>
+<text x="36" y="124" fill="#a8a8a8" font-size="13">read every scrap of text before anything clever</text>
+<text x="36" y="202" fill="#EAEAEA">2. rename</text>
+<text x="36" y="226" fill="#a8a8a8" font-size="13">give every function and variable a real name</text>
+<text x="36" y="304" fill="#EAEAEA">3. debugger</text>
+<text x="36" y="328" fill="#a8a8a8" font-size="13">watch the actual values, and end the argument</text>
+
+<g stroke="#EAEAEA" marker-end="url(#rv)">
+<line x1="235" y1="140" x2="235" y2="168"/>
+<line x1="235" y1="242" x2="235" y2="270"/>
+</g>
+<polyline points="450,310 560,310 560,208 454,208" fill="none" stroke="#FF2A2A" stroke-dasharray="6 5" marker-end="url(#rv)"/>
+<text x="548" y="268" fill="#FF2A2A" font-size="13">what you learn</text>
+<text x="548" y="288" fill="#FF2A2A" font-size="13">renames more</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="366" width="640" height="62"/>
+</g>
+<text x="36" y="394" fill="#EAEAEA" font-size="13">Keep a lab notebook. Day three never remembers what day one proved.</text>
+<text x="36" y="416" fill="#a8a8a8" font-size="13">And only touch binaries you are allowed to touch. Crackmes and your own.</text>
+</svg>

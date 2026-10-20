@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="430" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">THE IRON VALLEY</text>
+<defs>
+<marker id="nc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#FF2A2A"/>
+</marker>
+</defs>
+
+<text x="70" y="58" fill="#a8a8a8" font-size="13">binding energy per nucleon</text>
+<line x1="60" y1="70" x2="60" y2="330" stroke="#2a2a2a"/>
+<line x1="60" y1="330" x2="650" y2="330" stroke="#2a2a2a"/>
+
+<polyline points="72,330 79,126 98,108 108,100 203,76 284,79 355,84 403,87 498,99 628,110"
+ fill="none" stroke="#EAEAEA" stroke-width="2"/>
+
+<circle cx="203" cy="76" r="5" fill="#FF2A2A"/>
+<text x="216" y="72" fill="#FF2A2A" font-size="13">iron-56</text>
+<text x="86" y="122" fill="#a8a8a8" font-size="13">helium</text>
+<text x="540" y="104" fill="#a8a8a8" font-size="13">uranium-235</text>
+
+<line x1="112" y1="150" x2="186" y2="90" stroke="#FF2A2A" marker-end="url(#nc)"/>
+<text x="96" y="168" fill="#FF2A2A" font-size="13">light atoms fuse</text>
+<line x1="600" y1="150" x2="228" y2="86" stroke="#FF2A2A" marker-end="url(#nc)"/>
+<text x="505" y="168" fill="#FF2A2A" font-size="13">heavy atoms split</text>
+
+<text x="80" y="352" fill="#a8a8a8" font-size="13">light</text>
+<text x="300" y="352" fill="#a8a8a8" font-size="13">mass of the nucleus</text>
+<text x="612" y="352" fill="#a8a8a8" font-size="13">heavy</text>
+
+<text x="20" y="392" fill="#EAEAEA" font-size="13">Both splitting and merging slide downhill, toward the bottom of the valley.</text>
+<text x="20" y="416" fill="#a8a8a8" font-size="13">Heavy atoms roll down by splitting. Light atoms roll down by merging.</text>
+</svg>

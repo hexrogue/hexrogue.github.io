@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 410" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="410" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">AC, DC, AND THE GARBAGE ZONE</text>
+
+<text x="40" y="70" fill="#FF2A2A" font-size="15">DC</text>
+<line x1="20" y1="110" x2="330" y2="110" stroke="#2a2a2a"/>
+<line x1="60" y1="110" x2="300" y2="110" stroke="#EAEAEA" stroke-width="2"/>
+<text x="60" y="140" fill="#a8a8a8" font-size="13">battery, USB, one direction, steady</text>
+
+<text x="360" y="70" fill="#FF2A2A" font-size="15">AC</text>
+<line x1="350" y1="110" x2="660" y2="110" stroke="#2a2a2a"/>
+<path d="M380,110 C388,78 404,72 410,72 C416,72 432,78 440,110 C448,142 464,148 470,148 C476,148 492,142 500,110 C508,78 524,72 530,72 C536,72 552,78 560,110 C568,142 584,148 590,148 C596,148 612,142 620,110" fill="none" stroke="#EAEAEA" stroke-width="2"/>
+<text x="360" y="172" fill="#a8a8a8" font-size="13">wall socket, 240 V, 50 times a second</text>
+
+<text x="20" y="210" fill="#a8a8a8" font-size="13">the same wire, read as ones and zeros</text>
+<g stroke="#FF2A2A">
+<rect x="20" y="224" width="380" height="46" fill="#1a0000"/>
+</g>
+<g stroke="#2a2a2a">
+<rect x="20" y="270" width="380" height="46" fill="#0f0f0f"/>
+<rect x="20" y="316" width="380" height="46" fill="#121212"/>
+</g>
+<text x="36" y="252" fill="#FF2A2A">counts as 1</text>
+<text x="36" y="298" fill="#a8a8a8">nothing is promised here</text>
+<text x="36" y="344" fill="#EAEAEA">counts as 0</text>
+<text x="430" y="252" fill="#a8a8a8" font-size="13">2.0 to 5.0 volts</text>
+<text x="430" y="298" fill="#a8a8a8" font-size="13">0.8 to 2.0 volts</text>
+<text x="430" y="344" fill="#a8a8a8" font-size="13">0 to 0.8 volts</text>
+
+<text x="20" y="390" fill="#EAEAEA" font-size="13">Your ones and zeros were always voltages, and the middle of the range is regret.</text>
+</svg>

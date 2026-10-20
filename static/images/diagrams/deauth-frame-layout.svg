@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="330" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">THE 26 BYTE DEAUTH, IN FULL</text>
+
+<g stroke="#2a2a2a">
+<rect x="20" y="72" width="49" height="52" fill="#121212"/>
+<rect x="69" y="72" width="49" height="52" fill="#121212"/>
+<rect x="118" y="72" width="148" height="52" fill="#121212"/>
+<rect x="266" y="72" width="148" height="52" fill="#121212"/>
+<rect x="414" y="72" width="148" height="52" fill="#121212"/>
+<rect x="562" y="72" width="49" height="52" fill="#121212"/>
+<rect x="611" y="72" width="49" height="52" fill="#121212"/>
+</g>
+
+<g fill="#EAEAEA" font-size="13">
+<text x="30" y="103">c0 00</text>
+<text x="79" y="103">3a 01</text>
+<text x="126" y="103">ff ff ff ff ff ff</text>
+<text x="274" y="103">02 11 22 33 44 55</text>
+<text x="422" y="103">02 11 22 33 44 55</text>
+<text x="572" y="103">f0 ff</text>
+<text x="621" y="103">02 00</text>
+</g>
+
+<g fill="#a8a8a8" font-size="12">
+<text x="20" y="144">ctrl</text>
+<text x="69" y="144">dur</text>
+<text x="118" y="144">address 1</text>
+<text x="266" y="144">address 2</text>
+<text x="414" y="144">address 3</text>
+<text x="562" y="144">seq</text>
+<text x="608" y="144">reason</text>
+</g>
+<g fill="#EAEAEA" font-size="12">
+<text x="118" y="168">the target</text>
+<text x="266" y="168" fill="#FF2A2A">claims to be the AP</text>
+<text x="414" y="168">the network</text>
+<text x="560" y="168">2 = expired</text>
+</g>
+
+<text x="20" y="204" fill="#a8a8a8" font-size="13">2 + 2 + 6 + 6 + 6 + 2 + 2 = 26 bytes. Twenty-four of header, two of reason code.</text>
+
+<g stroke="#2a2a2a">
+<rect x="20" y="228" width="640" height="82" fill="#121212"/>
+</g>
+<text x="40" y="258" fill="#FF2A2A" font-size="14">bytes of proof that the sender is who the frame claims: 0</text>
+<text x="40" y="286" fill="#a8a8a8" font-size="13">address 2 is a text field. anyone transmitting on the channel can fill it in.</text>
+</svg>
