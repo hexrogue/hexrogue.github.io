@@ -6,7 +6,7 @@ tags: ['esp32', 'wifi', 'explainer']
 author: nuh
 ---
 
-Join a hotel wifi, and before you type anything, your phone opens a login page. Nothing is installed and nobody told you to look, yet the page appears. Two old tricks stacked on each other put it there, and both are small enough to run on the ESP32 on my desk.
+Join a hotel wifi, and before you type anything, your phone opens a login page. Nothing is installed and nobody told you to look, yet the page appears. It is the digital equivalent of a hotel clerk sliding a form under the door before you have taken off your shoes. Two old tricks stacked on each other put it there, and both are small enough to run on the ESP32 on my desk.
 
 ## Trick one: lie about DNS
 
@@ -42,7 +42,7 @@ Wire those together and the phone on your network opens your page without being 
 
 ## Why you should care
 
-Every captive portal you have ever used is this, which means the free airport wifi login page is a machine you have never met asking you for information. A real portal asks for a room number or a voucher. A dishonest one asks the same way and looks the same, and it is [an evil twin wearing a familiar name](/blog/watching-your-own-air-rogue-aps/). The page that appears without your asking is a strong signal that the network in front of you is controlling where your traffic goes, which is exactly what a portal is supposed to do and exactly what an attacker would like you to accept as normal.
+Every captive portal you have ever used is this, which means the free airport wifi login page is a machine you have never met asking you for information. It is the 80s movie villain with a clipboard and a lanyard. A real portal asks for a room number or a voucher. A dishonest one asks the same way and looks the same, and it is [an evil twin wearing a familiar name](/blog/watching-your-own-air-rogue-aps/). The page that appears without your asking is a strong signal that the network in front of you is controlling where your traffic goes, which is exactly what a portal is supposed to do and exactly what an attacker would like you to accept as normal.
 
 The defensive read is short. Never type a password you care about into a portal you reached over a network you do not trust, and prefer your own hotspot or a VPN. A portal is a redirect you agreed to by joining.
 

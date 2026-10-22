@@ -42,6 +42,11 @@ flowchart TD
 
 The messaging side had examples everywhere. The calling side had whispers. I spent days watching raw events flow past, logging everything, trying to spot the exact moment a call starts ringing versus gets answered versus drops. It felt like learning a language by eavesdropping.
 
+<figure>
+<img src="/images/memes/meme-go-calls.jpg" alt="One Does Not Simply meme: One does not simply make a phone call from Go without a telecom degree">
+<figcaption>Texting is a letter. A call is a hostage negotiation with packets.</figcaption>
+</figure>
+
 The breakthrough was boring, like all good breakthroughs. I stopped guessing and wrote a logger that printed every single event with timestamps. Within an hour I could see the pattern: this event means ringing, that one means picked up, this other one means the other side hung up. The protocol was never mysterious. It was just undocumented.
 
 ## What is VoIP, really

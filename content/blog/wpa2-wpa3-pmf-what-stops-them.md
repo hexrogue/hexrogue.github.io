@@ -6,7 +6,7 @@ tags: ['wifi', 'security', 'explainer']
 author: nuh
 ---
 
-[The deauth post](/blog/deauth-frames-anyone-can-forge/) ends with a promise: the fix is management frame protection, and modern gear just ignores a forged eviction notice. That is the short version. The long version is that wifi security has two generations, and the reason half the networks you can see are still forged-frame food is a compatibility setting.
+[The deauth post](/blog/deauth-frames-anyone-can-forge/) ends with a promise: the fix is management frame protection, and modern gear just ignores a forged eviction notice. That is the short version. The long version is that wifi security has two generations, and the reason half the networks you can see are still forged-frame food is a compatibility setting. This post is the part where the promise meets the router menu, and the router menu is a swamp.
 
 ## What WPA2 actually does
 

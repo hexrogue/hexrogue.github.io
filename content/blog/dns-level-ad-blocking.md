@@ -11,7 +11,7 @@ author: nuh
 <figcaption>What the internet looks like with DNS filtering. Probably.</figcaption>
 </figure>
 
-Last time I caught my TV phoning home at 3 AM. Readers asked what I did after the VLAN. The answer: I stopped the calls from leaving the house at all. Not with an ad blocker in the browser. With a bouncer at the DNS.
+Last time I caught my TV phoning home at 3 AM. Readers asked what I did after the VLAN. The answer: I stopped the calls from leaving the house at all. Not with an ad blocker in the browser. With a bouncer at the DNS. The bouncer is a text file and a bad attitude.
 
 ## DNS is a phone book, so I tore out pages
 

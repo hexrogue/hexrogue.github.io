@@ -6,7 +6,9 @@ tags: ['wifi', 'wireshark', 'security']
 author: nuh
 ---
 
-A monitor mode capture is mostly noise: beacons, management frames, and encrypted data you cannot read. Wireshark will decrypt your own WPA2 traffic if you give it the passphrase and the capture contains the handshake. The gap between those two conditions is where most people get stuck.
+A monitor mode capture is mostly noise: beacons, management frames, and encrypted data you cannot read. It is the digital equivalent of taping a conversation through a wall and getting a very detailed recording of the wall.
+
+Wireshark will decrypt your own WPA2 traffic if you give it the passphrase and the capture contains the handshake. Miss either one and you have a very expensive screensaver. The gap between those two conditions is where most people get stuck.
 
 ## What you need before you start
 

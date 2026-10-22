@@ -6,7 +6,7 @@ tags: ['study', 'oop']
 author: nuh
 ---
 
-Object oriented programming confused me exactly as long as I tried to memorize definitions. Encapsulation, inheritance, polymorphism. Words to chant before exams. Then someone explained it with a kitchen, and it clicked in a minute. Passing that on.
+Object oriented programming confused me exactly as long as I tried to memorize definitions. Encapsulation, inheritance, polymorphism. Words to chant before exams, and also the name of a band that would never get a record deal. Then someone explained it with a kitchen, and it clicked in a minute. Passing that on.
 
 ## Classes are cookie cutters, objects are cookies
 

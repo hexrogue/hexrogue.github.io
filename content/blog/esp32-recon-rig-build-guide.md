@@ -6,7 +6,7 @@ tags: ['esp32', 'wifi', 'hardware']
 author: nuh
 ---
 
-The driver post was about the kernel refusing to let the board talk. This one is the build: what to buy, how it is wired, how it flashes, and the things that wasted an evening. It is written for a board pointed at your own network, and the rules for that are on [the lab rules](/lab-rules/) page.
+The driver post was about the kernel refusing to let the board talk. This one is the build: what to buy, how it is wired, how it flashes, and the things that wasted an evening. It is the IKEA instruction manual of wifi hardware, except the allen key is a USB cable and the missing screw is your evening. It is written for a board pointed at your own network, and the rules for that are on [the lab rules](/lab-rules/) page.
 
 ## What the rig actually is
 

@@ -6,7 +6,7 @@ tags: ['study', 'os']
 author: nuh
 ---
 
-I am taking operating systems this semester, and the textbook reads like it was written by the scheduler itself: efficient, joyless, technically correct. So these are my notes, translated into human.
+I am taking operating systems this semester, and the textbook reads like it was written by the scheduler itself: efficient, joyless, technically correct. So these are my notes, translated into human. Same facts, fewer footnotes, one joke per page.
 
 ## Your OS is a middle manager
 

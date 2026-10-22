@@ -6,7 +6,7 @@ tags: ['radio', 'security', 'explainer']
 author: nuh
 ---
 
-Wifi and Bluetooth both live at 2.4 GHz. The rest of the cheap wireless world lives below 1 GHz, and the ESP32 cannot hear any of it. That is the entire reason the second half of this project exists, and the setup deserves a primer before the hardware arrives.
+Wifi and Bluetooth both live at 2.4 GHz. The rest of the cheap wireless world lives below 1 GHz, and the ESP32 cannot hear any of it. That is the entire reason the second half of this project exists, and the reason your cheap remote control can reach the garage while your phone gives up at the kitchen door. The setup deserves a primer before the hardware arrives.
 
 ## Why below 1 GHz
 

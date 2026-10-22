@@ -10,6 +10,11 @@ Walk from the kitchen to the bedroom on a call. The phone still shows two bars, 
 
 That choice is the whole story of roaming, and it is the one part of wifi people assume the network controls. It does not. The standard gives the client the vote, and the access point gets a suggestion box.
 
+<figure>
+<img src="/images/memes/meme-wifi-roaming-buttons.jpg" alt="Two Buttons meme: stay on the dead access point or roam to the one that works, with a sweating person labeled me, mid-call">
+<figcaption>The phone has the keys. The network has a suggestion box and a laminated diagram.</figcaption>
+</figure>
+
 ## The phone decides
 
 The 802.11 standard is blunt about it: the station decides when to leave and where to go. An access point cannot order a device to move. It can make a request, and the client can ignore it. It can refuse to associate, which is a different and blunter tool, but it cannot drag a connected phone away.
@@ -20,11 +25,11 @@ This is why the same house can behave differently for your laptop, your phone an
 
 Wifi roaming is old enough that the standard has grown three helpers.
 
-**802.11k** is the neighbour report. Without it, a client that wants to roam has to scan: tune away from its channel, listen for beacons on other channels, then come back. That detour costs airtime and causes the exact pause you notice mid-call. With k, the access point hands the client a list of nearby radios, their channels and their signal levels. The client still decides, but it no longer has to go looking.
+802.11k is the neighbour report. Without it, a client that wants to roam has to scan: tune away from its channel, listen for beacons on other channels, then come back. That detour costs airtime and causes the exact pause you notice mid-call. With k, the access point hands the client a list of nearby radios, their channels and their signal levels. The client still decides, but it no longer has to go looking.
 
-**802.11v** is BSS transition management. The access point sends a suggestion: this other radio is better for you, please move. The client may comply, delay, or refuse. The same mechanism gets used for load balancing, which is why a busy network sometimes asks you to move when nothing looks wrong.
+802.11v is BSS transition management. The access point sends a suggestion: this other radio is better for you, please move. The client may comply, delay, or refuse. The same mechanism gets used for load balancing, which is why a busy network sometimes asks you to move when nothing looks wrong.
 
-**802.11r** is fast BSS transition. A normal roam means a fresh four-way handshake with the new access point, and that is [the expensive part](/blog/wpa2-wpa3-pmf-what-stops-them/). r lets the new radio reuse key material from the old one, so the client skips most of the dance. Two flavours exist, over the air and over the distribution system, and the over-the-air one is the one home gear usually means.
+802.11r is fast BSS transition. A normal roam means a fresh four-way handshake with the new access point, and that is [the expensive part](/blog/wpa2-wpa3-pmf-what-stops-them/). r lets the new radio reuse key material from the old one, so the client skips most of the dance. Two flavours exist, over the air and over the distribution system, and the over-the-air one is the one home gear usually means.
 
 ```mermaid {alt="A phone leaving the kitchen access point for the bedroom one: data gets bad, the kitchen AP sends an 802.11k neighbour report, the phone does an 802.11r fast transition, and only then does data move"}
 sequenceDiagram

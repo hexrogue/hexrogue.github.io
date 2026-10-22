@@ -11,7 +11,7 @@ author: nuh
 <figcaption>Debugging fuel. Consumed in large quantities during this project.</figcaption>
 </figure>
 
-My admissions CRM could text people automatically. Then the boss asked the obvious question: can it call them too? That question cost me a month and taught me more about real time systems than anything before it. This is that month.
+My admissions CRM could text people automatically. Then the boss asked the obvious question: can it call them too? That question cost me a month and taught me more about real time systems than anything before it. It also cost me my sleep schedule, which was already on a payment plan. This is that month.
 
 ## The gap between texting and talking
 

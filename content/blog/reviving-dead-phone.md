@@ -6,7 +6,7 @@ tags: ['android', 'rooting']
 author: nuh
 ---
 
-My old phone stopped getting updates two years ago. Still good hardware, perfect for a home dashboard or a test device, except the stock ROM got slower with every year and the battery stats blamed everything except itself. So I unlocked the bootloader and gave it a second life.
+My old phone stopped getting updates two years ago. Still good hardware, perfect for a home dashboard or a test device, except the stock ROM got slower with every year and the battery stats blamed everything except itself. It was the digital equivalent of a couch with a broken spring: technically furniture, functionally a threat. So I unlocked the bootloader and gave it a second life.
 
 ## Unlocking is the easy scary part
 
@@ -25,7 +25,7 @@ Your phone boots through a chain of trust. Each stage checks the signature of th
 
 That is also why unlocking wipes your data. An unlocked phone with your old data on it would be a gift to any thief with a USB cable. The wipe is not punishment. It is the one honest part of the deal.
 
-> "IT'S ALIVE!", Frankenstein (1931). Me, watching a two year abandoned phone boot a fresh ROM in half the time. Same energy.
+A two year abandoned phone booted a fresh ROM in half the time. I did not shout at the sky. I did, however, check the battery stats twice.
 
 ## Then the custom ROM
 

@@ -8,7 +8,9 @@ author: nuh
 
 [A beacon](/blog/80211-frames-you-can-read/) is the simplest frame in wifi. A router announces its name about ten times a second, on its channel, to nobody in particular. It is unsigned, it is unencrypted, and any radio can transmit one.
 
-Copy that frame at scale and you have beacon spam.
+Your phone treats that announcement like a guest list. No bouncer, no ID check, no guy named Chad at the door asking if you are on the list. Anyone with a radio can add a name. Copy that frame at scale and you have beacon spam.
+
+A beacon is also the chimichanga of wifi frames: simple, deep-fried, and impossible to take seriously until someone shows up with three thousand of them.
 
 ## What it is
 
@@ -48,7 +50,7 @@ A detector worth having is a baseline: unique BSSIDs per minute, on your own air
 <figcaption>At no point does the phone ask whether the network is real. It only asks which one is strongest.</figcaption>
 </figure>
 
-> "Some men just want to watch the world burn.", The Dark Knight (2008). Me, watching the wifi list fill with other people's jokes.
+Some people want to watch the wifi list burn. I just want to know how long the fake names stay in the phone's memory before it gives up. That is a less dramatic goal, but it fits in a blog post.
 
 ## Try this
 

@@ -6,7 +6,7 @@ tags: ['arch', 'linux', 'tips']
 author: nuh
 ---
 
-Arch has a reputation for breaking. Mine breaks about twice a year, takes twenty minutes to fix, and teaches me something each time. The secret is not skill. It is habits, all of them boring.
+Arch has a reputation for breaking. Mine breaks about twice a year, takes twenty minutes to fix, and teaches me something each time. The secret is not skill. It is habits, all of them boring, most of them learned while staring at a black screen and pretending the silence is a feature.
 
 ## Tip one: read before you press Y
 

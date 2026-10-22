@@ -8,6 +8,11 @@ author: nuh
 
 Your wifi is fine at 8am and unusable at 8pm. Nothing in your house changed. The band did. 2.4 GHz is shared with microwaves, Bluetooth, cordless phones, baby monitors, Zigbee and every neighbour's router, and it has three usable lanes.
 
+<figure>
+<img src="/images/memes/meme-24ghz-crowded.jpg" alt="This Is Fine dog meme: 2.4 GHz at 8 PM while the microwave, Bluetooth, a baby monitor, and 37 neighbours all share the band">
+<figcaption>The band is not crowded. It is a group project where everyone brought a microwave.</figcaption>
+</figure>
+
 ## Three lanes, thirteen labels
 
 The band runs from 2.400 to 2.4835 GHz. Channels are numbered 5 MHz apart, but a 20 MHz wifi channel occupies four of those gaps. That is why 1, 6 and 11 are the only non-overlapping choices in the common plan: each takes a 20 MHz slice, and they just touch at the edges.

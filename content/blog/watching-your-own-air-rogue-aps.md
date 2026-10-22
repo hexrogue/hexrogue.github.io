@@ -8,6 +8,8 @@ author: nuh
 
 [Recon](/blog/passive-recon-wifi-and-ble/) gives you a table of every radio in range. This post is about the one entry that should not be there.
 
+It is the wifi equivalent of finding a second front door on your house, with a welcome mat that has your name on it.
+
 A rogue access point is any access point that is not part of your inventory. There are two shapes of it. The boring one is a real access point, plugged into your network, that nobody documented, usually a spare router someone enabled because the wifi was slow. The interesting one is not on your network at all: it is a second radio wearing your network's name, broadcasting to your devices, waiting for them to join it.
 
 ## Why a device joins an impostor

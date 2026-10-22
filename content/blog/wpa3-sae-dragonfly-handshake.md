@@ -8,6 +8,11 @@ author: nuh
 
 WPA3 has a reputation problem. Marketing calls it unhackable, forums call it broken, and both are wrong in useful ways. The honest version is narrower and more interesting: WPA3 kills the offline dictionary attack, which is the technique most people mean when they say their wifi got hacked.
 
+<figure>
+<img src="/images/memes/meme-wpa3-fine.jpg" alt="This Is Fine dog meme: WPA3 is unhackable while transition mode quietly keeps WPA2 alive">
+<figcaption>Marketing says unhackable. Transition mode says hold my WPA2.</figcaption>
+</figure>
+
 ## The thing SAE removes
 
 Start with what WPA2 gives an attacker. The passphrase becomes a key, the four-way handshake derives session keys, and the whole exchange is readable on the air. A recording contains everything needed to test guesses at home, at full speed, on a machine that never has to touch the network again. The cracker is not attacking your router. They are attacking a file.
@@ -37,13 +42,13 @@ Two properties fall out of this. Every guess needs a real exchange with the acce
 
 ## What it does not fix
 
-**A weak password still falls.** Rate limiting makes online guessing slow, not impossible. The dictionary moved from "run for five minutes on a laptop" to "run for weeks against a live access point", which is a huge improvement and still not a reason to use the dog's name.
+A weak password still falls. Rate limiting makes online guessing slow, not impossible. The dictionary moved from "run for five minutes on a laptop" to "run for weeks against a live access point", which is a huge improvement and still not a reason to use the dog's name.
 
-**The access point is still an access point.** An evil twin can stand up a fake WPA3 network and collect whatever the client sends. SAE makes the captured exchange less useful. It does nothing about a user typing a password into the wrong portal. [The rogue access point post](/blog/watching-your-own-air-rogue-aps/) is the relevant one.
+The access point is still an access point. An evil twin can stand up a fake WPA3 network and collect whatever the client sends. SAE makes the captured exchange less useful. It does nothing about a user typing a password into the wrong portal. [The rogue access point post](/blog/watching-your-own-air-rogue-aps/) is the relevant one.
 
-**Downgrade survives in transition mode.** Most routers run WPA3 and WPA2 on the same network name with the same passphrase so old devices keep working. That leaves the WPA2 path alive, and an attacker can push a client onto it. The defence is transition disable, a flag from the access point telling modern clients to refuse the fallback. Plenty of routers bury it.
+Downgrade survives in transition mode. Most routers run WPA3 and WPA2 on the same network name with the same passphrase so old devices keep working. That leaves the WPA2 path alive, and an attacker can push a client onto it. The defence is transition disable, a flag from the access point telling modern clients to refuse the fallback. Plenty of routers bury it.
 
-**Implementations had holes.** The Dragonblood research found timing and cache side channels in early SAE, plus downgrade issues. One of the fixes was hashing the password directly into a group element, called hash-to-element, instead of the original hunting-and-pecking loop. Old firmware may still run the slow, leaky path.
+Implementations had holes. The Dragonblood research found timing and cache side channels in early SAE, plus downgrade issues. One of the fixes was hashing the password directly into a group element, called hash-to-element, instead of the original hunting-and-pecking loop. Old firmware may still run the slow, leaky path.
 
 <figure>
 <img src="/images/memes/meme-wpa3-expanding-brain.jpg" alt="Expanding brain meme: using a strong password, then WPA3 with SAE, then WPA3 and WPA2 side by side, and finally the WPA2 side being downgraded so the password is the whole defence">

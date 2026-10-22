@@ -6,7 +6,7 @@ tags: ['study', 'cpu']
 author: nuh
 ---
 
-Computer organization sounded dry until week two, when I realized it answers the best question in computing: how do words I type become electricity doing math. My notebook version, short:
+Computer organization sounded dry until week two, when I realized it answers the best question in computing: how do words I type become electricity doing math. My notebook version, short enough to read without a degree and long enough to sound smart at a dinner party you were not invited to:
 
 ## Everything is switches
 

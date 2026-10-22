@@ -7,7 +7,7 @@ tags: ['go', 'cli', 'astronomy', 'bubbletea', 'malaysia']
 author: nuh
 ---
 
-I have stood in a basement carpark, holding my phone at the angle where hope lives, waiting for a prayer app to admit it needed the internet. No signal, no answer. For a prayer timetable. The Sun was directly above the building, no signal required.
+I have stood in a basement carpark, holding my phone at the angle where hope lives, waiting for a prayer app to admit it needed the internet. No signal, no answer. For a prayer timetable. The Sun was directly above the building, no signal required. It has been running this service for about four billion years and has never once asked me to accept cookies.
 
 That was the moment I decided to compute the times myself.
 
@@ -32,10 +32,10 @@ That is the whole app. No database, no cloud, no "sign in with Google" button. P
 
 Prayer times are Sun positions with names. The Sun's position comes from four ideas that sound worse than they are:
 
-- **Solar declination**: how tilted the Sun is today. Changes daily.
-- **Equation of time**: the few minutes by which Sun time and clock time disagree.
-- **Hour angle**: how far the Sun is from its daily peak, measured as an angle.
-- **Solar noon**: the peak itself. Every other prayer is counted from here.
+- Solar declination: how tilted the Sun is today. Changes daily.
+- Equation of time: the few minutes by which Sun time and clock time disagree.
+- Hour angle: how far the Sun is from its daily peak, measured as an angle.
+- Solar noon: the peak itself. Every other prayer is counted from here.
 
 I followed a 2017 research paper by Mohamoud that lays all this out with geometry instead of magic.
 

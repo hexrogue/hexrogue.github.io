@@ -8,6 +8,8 @@ author: nuh
 
 [The recon post](/blog/passive-recon-wifi-and-ble/) stops where most Bluetooth writing stops: a device shouts small packets into the room and you write down its name and address. That is advertising, and it is the shallow half. The other half is what happens once two devices agree to talk.
 
+Bluetooth is a toddler with a walkie-talkie. Advertising is the part where it shouts its name. GATT is the part where it hands you a three-ring binder and expects you to admire the tabs.
+
 ## Advertising is a bulletin board
 
 A peripheral that wants to be found advertises. The packet is small and it announces, in effect: I exist, my name is this, and these are the kinds of service I offer. A central that is interested replies and, if both agree, the two stop broadcasting and open a private two-way channel. From the radio's point of view, that is the transition from shouting to a phone call.
@@ -40,7 +42,7 @@ Bonding is what happens after: both sides store the keys, so future connections 
 
 Both wifi and Bluetooth randomise their hardware address to stop you being followed by a fixed number. Bluetooth does it properly: the address rotates, and a device you are bonded to can still recognise you because you share a key that resolves the rotation. To everyone else, the address changes every few minutes to half an hour, and the trail breaks.
 
-That is a real privacy win, and it is also the exact place item trackers reveal what the privacy was designed to protect. A tracker is not followed by its address. It is followed by its relationship. The tag broadcasts a rotating address, and any phone from the tracking network that hears it relays the sighting home, so the network does the locating. The rotating address protects you from the sniffer standing next to you. It does nothing about the network, because the network was built to resolve the rotation on purpose. That is the design, not a flaw, and it is why the anti-stalking features had to be added separately: a tag that has been away from its owner for a while starts chirping, and both major phone platforms will warn you about a tracker travelling with you.
+That is a real privacy win, and it is also the exact place item trackers reveal what the privacy was designed to protect. A tracker is not followed by its address. It is followed by its relationship. It is a private investigator with a rotating fake mustache and a gym membership. The tag broadcasts a rotating address, and any phone from the tracking network that hears it relays the sighting home, so the network does the locating. The rotating address protects you from the sniffer standing next to you. It does nothing about the network, because the network was built to resolve the rotation on purpose. That is the design, not a flaw, and it is why the anti-stalking features had to be added separately: a tag that has been away from its owner for a while starts chirping, and both major phone platforms will warn you about a tracker travelling with you.
 
 The lesson generalises past tags. Rotating your identifier defeats local observation and does nothing about the party you told your identity to.
 
