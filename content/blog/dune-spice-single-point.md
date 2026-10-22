@@ -11,7 +11,7 @@ author: nuh
 <figcaption>Arrakis, probably. (Not Arrakis.)</figcaption>
 </figure>
 
-Dune looks like a story about a chosen one. I think it is a story about infrastructure. Specifically: what happens when your entire civilization has exactly one load bearing component, and it only grows on one planet, guarded by giant worms. That is not worldbuilding. That is a risk assessment screaming for help.
+Dune looks like a story about a chosen one. I think it is a story about infrastructure. Specifically: what happens when your entire civilization has exactly one load bearing component, and it only grows on one planet, guarded by giant worms. That is not worldbuilding. That is a risk assessment screaming for help. It is also every startup with one database and a confident intern.
 
 ## The spice is every database with no replica
 

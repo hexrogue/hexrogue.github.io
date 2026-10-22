@@ -6,7 +6,7 @@ tags: ['movies', 'tenet', 'theory']
 author: nuh
 ---
 
-People call Tenet confusing. I think it is the simplest Nolan film, and that is exactly why it confuses everyone. My hypothesis: you are not supposed to follow the plot forwards. You are supposed to follow the entropy.
+People call Tenet confusing. I think it is the simplest Nolan film, and that is exactly why it confuses everyone. My hypothesis: you are not supposed to follow the plot forwards. You are supposed to follow it the way you follow a receipt after a blackout: backwards, squinting, and hoping the total makes sense. You are supposed to follow the entropy.
 
 ## The one rule that explains everything
 

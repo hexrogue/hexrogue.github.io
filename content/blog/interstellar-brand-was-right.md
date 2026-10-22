@@ -6,7 +6,7 @@ tags: ['movies', 'interstellar', 'theory']
 author: nuh
 ---
 
-Everyone quotes Interstellar for the physics. Nobody defends the scene where Dr. Brand says love might be an artifact of a higher dimension. Audiences laughed. Physicists rolled their eyes. I have rewatched this film four times and I am now convinced that speech is the entire movie in disguise. My hypothesis, in three parts:
+Everyone quotes Interstellar for the physics. Nobody defends the scene where Dr. Brand says love might be an artifact of a higher dimension. Audiences laughed. Physicists rolled their eyes. I did not laugh. I was too busy wondering why the robots had more emotional intelligence than the humans. I have rewatched this film four times and I am now convinced that speech is the entire movie in disguise. My hypothesis, in three parts:
 
 ## Hypothesis one: the love speech is the plot, spoiled early
 

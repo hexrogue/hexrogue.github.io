@@ -6,7 +6,7 @@ tags: ['study', 'electronics', 'ee']
 author: nuh
 ---
 
-I am a software guy. My world is if-else and semicolons. Then I touched electrical engineering and realized all my code runs on literal lightning we bullied into doing math. So I learned the basics. Here is my notebook, translated into human.
+I am a software guy. My world is if-else and semicolons. Then I touched electrical engineering and realized all my code runs on literal lightning we bullied into doing math. I have never trusted a semicolon since. So I learned the basics. Here is my notebook, translated into human.
 
 ## Voltage is pressure, current is flow
 

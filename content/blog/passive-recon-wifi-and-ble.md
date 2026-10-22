@@ -6,7 +6,7 @@ tags: ['wifi', 'security', 'ble', 'explainer']
 author: nuh
 ---
 
-Your phone's wifi chip has opinions. It only hands the operating system frames addressed to it or to the network it belongs to, and it drops the rest without ceremony. Promiscuous mode turns that filter off and keeps everything the radio can hear.
+Your phone's wifi chip has opinions. It only hands the operating system frames addressed to it or to the network it belongs to, and it drops the rest without ceremony. It is the digital equivalent of a bouncer who only lets in people on the list, and then someone shows up with a clipboard and a monitor-mode adapter. Promiscuous mode turns that filter off and keeps everything the radio can hear.
 
 That single switch is what "recon" means in every wifi security tool.
 

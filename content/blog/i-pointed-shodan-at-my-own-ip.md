@@ -6,7 +6,7 @@ tags: ['security', 'homelab', 'networking']
 author: nuh
 ---
 
-Last month I searched for myself on the internet. Not my name. My IP address. What came back was a list of my open doors, written up neatly like a menu. I had published myself and never noticed.
+Last month I searched for myself on the internet. Not my name. My IP address. What came back was a list of my open doors, written up neatly like a menu. It was the digital equivalent of finding your house listed on a tour guide, with photos of the unlocked windows. I had published myself and never noticed.
 
 ## Shodan is Google for machines
 

@@ -6,7 +6,7 @@ tags: ['physics', 'energy', 'explainer']
 author: nuh
 ---
 
-The sun is a fusion bomb that never stops exploding, held together by its own weight. Humans learned to split atoms before we understood them, and we are still learning to squeeze them. This is the story of both, no physics degree needed.
+The sun is a fusion bomb that never stops exploding, held together by its own weight. Humans learned to split atoms before we understood them, and we are still learning to squeeze them. It is the universe's oldest power plant, and we are still reading the manual with a flashlight. This is the story of both, no physics degree needed.
 
 ## Mass is frozen energy
 

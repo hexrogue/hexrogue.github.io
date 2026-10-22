@@ -7,7 +7,7 @@ tags: ['finance', 'film', 'economics']
 author: nuh
 ---
 
-A movie about the 2008 crash made me pause every twenty minutes to google things. The crash, explained like you are five, plus the part the movie gets wrong:
+A movie about the 2008 crash made me pause every twenty minutes to google things. It is the only film where the villain is a spreadsheet and the jump scare is a credit default swap. The crash, explained like you are five, plus the part the movie gets wrong:
 
 <figure>
 <img src="/images/city-towers.jpg" alt="Wall Street at 8 AM, probably">

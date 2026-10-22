@@ -6,7 +6,7 @@ tags: ['esp32', 'wifi', 'security', 'homelab']
 author: nuh
 ---
 
-It started with an ESP32 plugged into my laptop and a simple question: what can this thing actually hear. It ended one long evening later with me disassembling a closed WiFi driver, downgrading an entire SDK for nothing, and learning more about 802.11 frames than any lecture ever taught me. The board now runs a recon dashboard I built from scratch. This is the whole story, including the part where I was wrong in public.
+It started with an ESP32 plugged into my laptop and a simple question: what can this thing actually hear. It ended one long evening later with me disassembling a closed WiFi driver, downgrading an entire SDK for nothing, and learning more about 802.11 frames than any lecture ever taught me. The answer was "more than the driver wanted me to know," which is how a five-dollar board turns into a vendetta. The board now runs a recon dashboard I built from scratch. This is the whole story, including the part where I was wrong in public.
 
 Four of the things I had to learn the hard way now have their own posts, because they deserve drawings instead of dense paragraphs: [access points, stations and the join dance](/blog/wifi-ap-sta-how-devices-join/), [the frames you can read off the air](/blog/80211-frames-you-can-read/), [why deauth frames work at all](/blog/deauth-frames-anyone-can-forge/), and [what passive recon actually collects](/blog/passive-recon-wifi-and-ble/). This post is the story. Those are the parts I wish someone had handed me first. If you would rather have the reading order than the story, it lives at [wifi from zero](/wifi-from-zero/).
 

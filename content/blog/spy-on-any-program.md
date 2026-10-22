@@ -6,7 +6,7 @@ tags: ['security', 'linux', 'debugging', 'reversing']
 author: nuh
 ---
 
-Every program lies about what it does. Not maliciously. It just never tells you the full story. The installer says "quick setup" while writing files in six directories. The app says "no account needed" while phoning three analytics servers.
+Every program lies about what it does. Not maliciously. It just never tells you the full story. The installer says "quick setup" while writing files in six directories. The app says "no account needed" while phoning three analytics servers. It is not a conspiracy. It is a filing cabinet with no labels and a lock you can pick with strace.
 
 After years of CTFs, homelab mysteries, and malware curiosity, I built a method for interrogating any program until it confesses. Five layers, cheapest first. This is the post I wish existed when I started.
 

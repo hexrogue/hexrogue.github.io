@@ -8,7 +8,7 @@ author: nuh
 
 A deauth frame is a wifi eviction notice. It says one thing: you are no longer associated with this network. Twenty-six bytes that prove nothing about who sent them.
 
-That missing proof is the entire story.
+That missing proof is the entire story. It is the bureaucratic version of a bouncer throwing you out and then handing you a form that says "we have no idea who did this."
 
 ## The frame
 

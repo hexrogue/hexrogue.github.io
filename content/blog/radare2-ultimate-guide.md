@@ -6,7 +6,7 @@ tags: ['reversing', 'security', 'radare2']
 author: nuh
 ---
 
-Everyone told me to learn Ghidra. I learned the terminal gremlin instead. Ghidra is a cruise ship: big, comfortable, everything labeled. Radare2 is a jetski you assemble mid-ocean while it insults you. I use both now, but r2 is the one I reach for first, and this is the guide I wish existed when I started.
+Everyone told me to learn Ghidra. I learned the terminal gremlin instead. Ghidra is a cruise ship: big, comfortable, everything labeled. Radare2 is a jetski you assemble mid-ocean while it insults you. The jetski comes with a manual written in flags and a strong opinion about your free time. I use both now, but r2 is the one I reach for first, and this is the guide I wish existed when I started.
 
 <figure>
 <img src="/images/memes/meme-r2-pigeon.jpg" alt="Is this a disassembler meme about radare2">

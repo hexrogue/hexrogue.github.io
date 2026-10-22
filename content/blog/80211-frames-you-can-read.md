@@ -6,7 +6,7 @@ tags: ['wifi', 'networking', 'explainer']
 author: nuh
 ---
 
-Every wifi packet you will ever capture is the same envelope. Once that clicks, a wall of hex becomes a conversation you can follow with one eye.
+Every wifi packet you will ever capture is the same envelope. Once that clicks, a wall of hex becomes a conversation you can follow with one eye. The first time it clicks, you feel like a wizard. The second time, you realize the wizard is just reading headers and taking notes.
 
 ## The envelope
 

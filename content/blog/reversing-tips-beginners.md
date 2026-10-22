@@ -6,7 +6,7 @@ tags: ['reversing', 'tips', 'security']
 author: nuh
 ---
 
-The first binary I opened looked like a city with no street signs. Ghidra handed me a map full of FUN_00101060 and expected me to navigate. I did what every beginner does: stared at it, changed nothing, and closed the laptop.
+The first binary I opened looked like a city with no street signs. Ghidra handed me a map full of FUN_00101060 and expected me to navigate. The map was technically correct. So is a phone book with no names. I did what every beginner does: stared at it, changed nothing, and closed the laptop.
 
 A few binaries later, I have a loop that works.
 

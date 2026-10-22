@@ -6,7 +6,7 @@ tags: ['arch', 'linux']
 author: nuh
 ---
 
-Yes, Arch is my daily driver. No, I will not shut up about it. But this is not a conversion post. This is about the Tuesday an update left me staring at a boot menu with no Arch in it, and why I am glad it happened.
+Yes, Arch is my daily driver. No, I will not shut up about it. But this is not a conversion post. This is about the Tuesday an update left me staring at a boot menu with no Arch in it, and why I am glad it happened. The boot menu is a polite way of saying the computer has decided to take a personal day.
 
 ## The update that removed my OS (from the menu)
 

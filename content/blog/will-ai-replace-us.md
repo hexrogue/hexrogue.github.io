@@ -6,7 +6,7 @@ tags: ['ai', 'rant', 'career']
 author: nuh
 ---
 
-Ngl, I am tired of this question. Every family gathering now: "Nuh, AI can code already right? So programmers habis la?" Bro. Chill.
+Ngl, I am tired of this question. Every family gathering now: "Nuh, AI can code already right? So programmers habis la?" Bro. Chill. I have heard this question more times than I have heard my own name at dinner. And I love my family. Mostly.
 
 Yes, I use AI daily. Yes, it writes half my boilerplate. No, it has not replaced me. It just made the boring parts faster and the dumb parts more obvious.
 

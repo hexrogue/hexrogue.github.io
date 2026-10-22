@@ -6,7 +6,7 @@ tags: ['security', 'pentesting', 'bugbounty']
 author: nuh
 ---
 
-Some bugs crash your app. The scary ones politely hand you other people's data. I found one of those in a test shop, and it took changing a single number.
+Some bugs crash your app. The scary ones politely hand you other people's data. I found one of those in a test shop, and it took changing a single number. One number. No exploit kit, no hoodie, no dramatic typing. Just a URL with the confidence of a bad password.
 
 ## What is an IDOR, explained with lockers
 

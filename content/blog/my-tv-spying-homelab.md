@@ -6,7 +6,7 @@ tags: ['homelab', 'networking', 'openwrt']
 author: nuh
 ---
 
-I bought a used router to flash OpenWrt on a bored Saturday. The plan was simple: better WiFi. Three weeks later I had VLANs, WireGuard back home, and a spreadsheet of every domain my TV talks to at 3 AM. This is how that happens. Nobody plans a homelab. It accretes.
+I bought a used router to flash OpenWrt on a bored Saturday. The plan was simple: better WiFi. Three weeks later I had VLANs, WireGuard back home, and a spreadsheet of every domain my TV talks to at 3 AM. The spreadsheet was not part of the plan. The spreadsheet is never part of the plan. This is how that happens. Nobody plans a homelab. It accretes.
 
 ## It started with one VLAN
 

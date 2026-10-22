@@ -6,7 +6,7 @@ tags: ['wifi', 'security', 'explainer']
 author: nuh
 ---
 
-[The PMKID is a coat-check ticket](/blog/80211-frames-you-can-read/): a blob the router hands out before any real authentication, derived from your wifi passphrase. This post is the other half, the part where the ticket becomes a password. On your own network, in your own lab, which is the only version of this that belongs on a blog.
+[The PMKID is a coat-check ticket](/blog/80211-frames-you-can-read/): a blob the router hands out before any real authentication, derived from your wifi passphrase. This post is the other half, the part where the ticket becomes a password. On your own network, in your own lab, which is the only version of this that belongs on a blog. It is also the closest thing wifi has to a receipt that says "your password is probably fine, but let's check."
 
 ## Two ways to get the material
 

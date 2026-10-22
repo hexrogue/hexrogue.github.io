@@ -6,7 +6,7 @@ tags: ['story', 'termux', 'python']
 author: nuh
 ---
 
-In 2020 I had no laptop. What I had was an Android phone, a charger that only worked at one angle, and a lot of free time. Everyone said you need a real computer to learn programming. My phone had other plans. This is the story of nano, Termux, and the year I coded with my thumbs.
+In 2020 I had no laptop. What I had was an Android phone, a charger that only worked at one angle, and a lot of free time. It was not a setup. It was a dare with a battery percentage. Everyone said you need a real computer to learn programming. My phone had other plans. This is the story of nano, Termux, and the year I coded with my thumbs.
 
 ## A Linux terminal hiding in the Play Store
 

@@ -6,7 +6,7 @@ tags: ['wifi', 'networking', 'explainer']
 author: nuh
 ---
 
-Your laptop reports -67 dBm and streams video. Your phone reports -67 dBm and stutters. Neither number is lying about the signal. Both are lying about the quality, because the signal alone does not contain the noise.
+Your laptop reports -67 dBm and streams video. Your phone reports -67 dBm and stutters. Neither number is lying about the signal. Both are lying about the quality, because the signal alone does not contain the noise. RSSI is the friend who says "I'm five minutes away" from another city.
 
 ## dBm is a log scale
 

@@ -6,7 +6,7 @@ tags: ['web', 'tips']
 author: nuh
 ---
 
-I have shipped code that worked perfectly on my laptop and fell apart the moment a real user touched it. These are the mistakes that cost me the most evenings. Read them now, or pay the same tuition later.
+I have shipped code that worked perfectly on my laptop and fell apart the moment a real user touched it. The laptop is a controlled environment. A real user is a raccoon with a credit card. These are the mistakes that cost me the most evenings. Read them now, or pay the same tuition later.
 
 ## The form that worked until someone opened curl
 

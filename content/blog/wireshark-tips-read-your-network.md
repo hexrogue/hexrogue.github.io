@@ -6,7 +6,7 @@ tags: ['wireshark', 'networking', 'tips']
 author: nuh
 ---
 
-Wireshark does not ease you in. My first capture was a wall of packets, and I understood zero of them. It looked like a spreadsheet had a panic attack. Then I learned three filters, and the panic turned into a reading list.
+Wireshark does not ease you in. My first capture was a wall of packets, and I understood zero of them. It looked like a spreadsheet had a panic attack. Three filters later, it looked like a spreadsheet with a therapist. The panic turned into a reading list.
 
 I wish someone had handed me this version on day one.
 

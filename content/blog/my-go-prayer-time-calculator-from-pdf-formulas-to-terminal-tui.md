@@ -6,7 +6,7 @@ tags: ['go', 'math', 'cli']
 author: nuh
 ---
 
-I found a paper called "Tracing the Shadow: Mathematical Calculation of Prayer Times Using Spherical Trigonometry." The title alone had enough syllables to scare off a normal person. I read it anyway.
+I found a paper called "Tracing the Shadow: Mathematical Calculation of Prayer Times Using Spherical Trigonometry." The title alone had enough syllables to scare off a normal person, which is exactly how I knew I had to read it. I read it anyway.
 
 I wanted to know how the app on my phone knew. Most apps download the answer from a server. Nobody shows the work. So I opened the paper and started translating it into Go.
 

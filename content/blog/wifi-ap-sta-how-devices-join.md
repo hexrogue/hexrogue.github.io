@@ -6,7 +6,7 @@ tags: ['wifi', 'networking', 'explainer']
 author: nuh
 ---
 
-A wifi network is not a thing you connect to. It is one device that decided to be a landlord, plus every device that agreed to rent.
+A wifi network is not a thing you connect to. It is one device that decided to be a landlord, plus every device that agreed to rent. The landlord sends a name tag ten times a second and calls it customer service.
 
 The landlord is the access point, or AP. It holds the network name, sets the rules, and bridges the air to the wired side of the world. The tenants are stations, or STA. Your phone is a station. Your laptop is a station. The TV, the printer, and the ESP32 on my desk are stations. In most homes the AP and the router are the same plastic box, which is why everyone uses the two words for one thing.
 
