@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Muhammad Nuh - Resume</title>
+<style>
+  @page { size: A4; margin: 10mm 12mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    color: #171717;
+    font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+    font-size: 9.4pt;
+    line-height: 1.35;
+  }
+  a { color: #171717; text-decoration: none; }
+  .header { border-bottom: 2px solid #171717; padding-bottom: 5px; margin-bottom: 7px; }
+  h1 {
+    font-size: 21pt;
+    line-height: 1;
+    margin: 0 0 3px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+  }
+  .role {
+    font-size: 9.8pt;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0 0 3px;
+  }
+  .contact {
+    font-family: "DejaVu Sans Mono", "Liberation Mono", monospace;
+    font-size: 7.2pt;
+    color: #444;
+  }
+  .contact span { margin-right: 10px; white-space: nowrap; }
+  h2 {
+    font-family: "DejaVu Sans Mono", "Liberation Mono", monospace;
+    font-size: 7.8pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 2px;
+    margin: 8px 0 4px;
+    color: #b00020;
+  }
+  h3 { font-size: 9.4pt; margin: 0 0 1px; }
+  .line {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
+  }
+  .where { font-weight: 700; }
+  .when {
+    font-family: "DejaVu Sans Mono", "Liberation Mono", monospace;
+    font-size: 7.5pt;
+    color: #555;
+    white-space: nowrap;
+  }
+  p { margin: 0 0 3px; }
+  ul { margin: 2px 0 3px 13px; padding: 0; }
+  li { margin: 0 0 1px; }
+  .summary { margin-bottom: 1px; }
+  .project { margin-bottom: 4px; }
+  .stack {
+    font-family: "DejaVu Sans Mono", "Liberation Mono", monospace;
+    font-size: 7.4pt;
+    color: #555;
+    margin: 0 0 1px;
+  }
+  .skills { margin: 0; }
+  .skills p { display: grid; grid-template-columns: 82px 1fr; gap: 4px; margin: 0 0 2px; }
+  .skills b { display: block; min-width: 0; font-size: 8pt; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+  .note { color: #555; }
+</style>
+</head>
+<body>
+  <header class="header">
+    <h1>Muhammad Nuh</h1>
+    <p class="role">Fullstack Developer / Automation, Cloud &amp; Embedded Systems</p>
+    <div class="contact">
+      <span>Petaling Jaya, Malaysia (UTC+8)</span>
+      <span>+60 11-1154 3759</span>
+      <span>ikanlemas0@gmail.com</span>
+      <span>github.com/hexrogue</span>
+      <span>hexrogue.github.io</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Fullstack developer with 6 years in IT and 1 year in electronics. I build automation, internal tools, and web applications, then go down the stack into Linux, cloud, networks, and firmware when the problem asks for it. Currently building APEL.A, the first APEL.A admissions system in Malaysia, at SKC Education Global.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="line"><h3>Fullstack Developer / SKC Education Global</h3><span class="when">OCT 2025 - PRESENT</span></div>
+    <ul>
+      <li>Built APEL.A, the first APEL.A admissions system in Malaysia: portfolio builder, evidence uploads, exams, interviews, scheduling, payments, and candidate tracking.</li>
+      <li>Built and maintain the admissions CRM: lead pipeline, role-based access, study-plan PDF generation, WhatsApp automation, and commission tracking.</li>
+      <li>Built SKC Central, the internal operations platform for finance, scheduling, teaching records, and admin.</li>
+      <li>Developed a Go-based WhatsApp gateway with VoIP support, deployed with Docker.</li>
+      <li>Reduced frontend bundle size by 40% and improved Lighthouse scores.</li>
+    </ul>
+
+    <div class="line"><h3>Freelance Developer / Self-employed</h3><span class="when">2025</span></div>
+    <ul>
+      <li>Built small business sites and internal tools for local clients.</li>
+      <li>Set up lead follow-up automation and WhatsApp integrations.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Selected Projects</h2>
+    <div class="project">
+      <div class="line"><h3>APEL.A Admissions Portal</h3><span class="when">PRIVATE CLIENT</span></div>
+      <p class="stack">Next.js, TypeScript, PostgreSQL, Drizzle, Better Auth, Puppeteer</p>
+      <p>First APEL.A admissions system in Malaysia. Candidate portal, portfolio builder, competency checklist, evidence uploads, exam and interview scheduling, proctoring signals, payments, finance, audit trails, and read-only share links.</p>
+    </div>
+    <div class="project">
+      <div class="line"><h3>Admissions CRM</h3><span class="when">PRIVATE CLIENT</span></div>
+      <p class="stack">Next.js, TypeScript, Drizzle, PostgreSQL, Puppeteer</p>
+      <p>Admissions platform replacing spreadsheets, email, and paper. Lead pipeline, RBAC, study-plan generation, WhatsApp automation, and commission tracking.</p>
+    </div>
+    <div class="project">
+      <div class="line"><h3>WhatsAPI</h3><span class="when">PRIVATE</span></div>
+      <p class="stack">Go, whatsmeow, Docker, WebSocket</p>
+      <p>Self-hosted WhatsApp gateway with messaging, VoIP, real-time events, QR and pairing auth, and SQLite/PostgreSQL support. Powers CRM messaging and calls.</p>
+    </div>
+    <div class="project">
+      <div class="line"><h3>Xray Workers</h3><span class="when">OPEN SOURCE</span></div>
+      <p class="stack">TypeScript, Cloudflare Workers, D1</p>
+      <p>Serverless VLESS proxy with D1 user management; edge-deployed with no VPS to patch. github.com/hexrogue/xray-worker</p>
+    </div>
+    <p class="note">More: SKC Central, SKC Advisor Chatbot, CareerGap, PrayerTime, City2Coordinates, ESP32 Recon Rig.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills two-col">
+      <div>
+        <p><b>Languages</b> Go, TypeScript, JavaScript, Python, PHP, Bash, SQL, C</p>
+        <p><b>Frontend</b> Next.js, React, Tailwind CSS, Hugo, TanStack Table</p>
+        <p><b>Backend</b> Node.js, Express, PostgreSQL, SQLite, MySQL, Redis, Drizzle, Better Auth</p>
+        <p><b>Cloud &amp; Infra</b> AWS (S3, Lambda, EC2, CloudFront), Google Cloud, Kubernetes, Docker, Cloudflare Workers/D1/KV, Vercel, Nginx, Caddy</p>
+      </div>
+      <div>
+        <p><b>Automation</b> Puppeteer, pdf-lib, pagedjs, ExcelJS, Nodemailer, WhatsApp APIs</p>
+        <p><b>Networking</b> 802.11, BLE, sub-GHz, OpenWrt, VLANs, WireGuard, Wireshark</p>
+        <p><b>Security</b> Burp Suite, Ghidra, radare2, Frida, GDB, Nmap, Metasploit</p>
+        <p><b>Hardware &amp; Systems</b> ESP32, ESP-IDF, sensors, serial, Arch Linux, Proxmox, Git, CI/CD</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="line"><h3>BSc Software Engineering / Universiti Tun Abdul Razak</h3><span class="when">MAR 2026 - PRESENT</span></div>
+    <p class="note">3.8 CGPA last semester. Studying while working full-time.</p>
+  </section>
+
+  <section>
+    <h2>Writing</h2>
+    <p>56 write-ups on software, networks, hardware, security, and career at hexrogue.github.io/blog. Also a research notebook on edge computing at hexrogue.github.io/research.</p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="430" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">LOOK, FOLLOW, CHANGE</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="60" width="200" height="310"/>
+<rect x="240" y="60" width="200" height="310"/>
+<rect x="460" y="60" width="200" height="310"/>
+</g>
+
+<text x="36" y="92" fill="#FF2A2A">look</text>
+<g fill="#a8a8a8" font-size="13">
+<text x="36" y="126">aaa analyze all</text>
+<text x="36" y="156">afl list functions</text>
+<text x="36" y="186">iz strings</text>
+<text x="36" y="216">pd 20 instructions</text>
+<text x="36" y="246">px 64 raw hex</text>
+</g>
+
+<text x="256" y="92" fill="#FF2A2A">follow</text>
+<g fill="#a8a8a8" font-size="13">
+<text x="256" y="126">s main · pdf</text>
+<text x="256" y="156">axt who calls this</text>
+<text x="256" y="186">axf what this calls</text>
+<text x="256" y="216">/ keyword search</text>
+<text x="256" y="246">VV graph view</text>
+</g>
+
+<text x="476" y="92" fill="#FF2A2A">change</text>
+<g fill="#a8a8a8" font-size="13">
+<text x="476" y="126">db breakpoint</text>
+<text x="476" y="156">dc continue</text>
+<text x="476" y="186">dr registers</text>
+<text x="476" y="216">wa nop patch</text>
+<text x="476" y="246">r2pipe keygen</text>
+</g>
+
+<text x="20" y="404" fill="#EAEAEA" font-size="13">Open, analyze, list, walk, read. That loop is most of reversing.</text>
+<text x="20" y="428" fill="#a8a8a8" font-size="13">Static analysis shows the map. The debugger shows the traffic.</text>
+</svg>

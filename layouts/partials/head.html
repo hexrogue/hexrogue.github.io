@@ -1,0 +1,134 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{- $desc := or .Description .Site.Params.description -}}
+  {{- $ogImage := "" -}}
+  {{- with .Params.image }}{{ $ogImage = . | absURL }}
+  {{- else }}{{ with findRESubmatch `(?i)src="(/images/[^"]+\.(?:jpg|jpeg|png|webp))"` .Content 1 }}{{ $ogImage = (index (index . 0) 1) | absURL }}{{ else }}{{ with .Site.Params.ogImage }}{{ $ogImage = . | absURL }}{{ end }}{{ end }}{{ end -}}
+  <title>{{ if .IsHome }}{{ .Site.Params.author.name }} | {{ .Site.Params.role }}{{ else }}{{ with .Title }}{{ . }} / {{ end }}{{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ $desc }}" />
+  {{ with .Params.tags }}<meta name="keywords" content="{{ delimit . ", " }}" />{{ end }}
+  <meta name="author" content="{{ .Site.Params.author.name }}" />
+  {{ if eq .Kind "404" -}}
+  <meta name="robots" content="noindex,follow" />
+  {{- else -}}
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  {{- end }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+  <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  {{- $posthogToken := os.Getenv "HUGO_PARAMS_POSTHOG_PROJECT_TOKEN" -}}
+  {{- $posthogHost := os.Getenv "HUGO_PARAMS_POSTHOG_HOST" -}}
+  {{- if and $posthogToken $posthogHost }}
+  <script defer src="https://cdn.jsdelivr.net/npm/posthog-js@1.368.0/dist/array.js" data-token="{{ $posthogToken }}" data-host="{{ $posthogHost }}" onload="window.posthog.init(this.dataset.token,{api_host:this.dataset.host,capture_exceptions:true})"></script>
+  {{- else if not hugo.IsProduction -}}
+    {{- if not $posthogToken }}{{ errorf "HUGO_PARAMS_POSTHOG_PROJECT_TOKEN variable required by PostHog is missing or un-configured, this causes events to be silently missed. This error stops appearing once HUGO_PARAMS_POSTHOG_PROJECT_TOKEN is configured" }}{{ end -}}
+    {{- if not $posthogHost }}{{ errorf "HUGO_PARAMS_POSTHOG_HOST variable required by PostHog is missing or un-configured, this causes events to be silently missed. This error stops appearing once HUGO_PARAMS_POSTHOG_HOST is configured" }}{{ end -}}
+  {{- end }}
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}]})"></script>
+  <script defer>
+  (function () {
+    function capture(event, properties) {
+      if (window.posthog && typeof window.posthog.capture === 'function') {
+        window.posthog.capture(event, properties);
+      }
+    }
+
+    document.addEventListener('click', function (event) {
+      var anchor = event.target.closest && event.target.closest('a');
+      if (!anchor) return;
+
+      var href = anchor.getAttribute('href') || '';
+      var path = window.location.pathname;
+      var method = '';
+      if (href.indexOf('mailto:') === 0) method = 'email';
+      if (href.indexOf('tel:') === 0) method = 'phone';
+      if (/^https:\/\/wa\.me\//i.test(href)) method = 'whatsapp';
+      if (method && (path === '/' || /^\/contact\/?$/.test(path))) {
+        capture('contact_method_selected', { contact_method: method });
+        return;
+      }
+
+      if (/\/files\/(resume|cv)\.pdf(?:[?#]|$)/i.test(href)) {
+        capture('resume_download_started', { file: /\/files\/cv\.pdf/i.test(href) ? 'cv' : 'resume' });
+        return;
+      }
+
+      if (/^\/projects\//.test(path) && anchor.hostname === 'github.com') {
+        capture('project_repository_opened');
+      }
+    });
+  })();
+  </script>
+  {{ range .AlternativeOutputFormats -}}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}" />
+  {{ end -}}
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:locale" content="{{ replace (.Site.Language.Locale | default "en-us") "-" "_" }}" />
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }}{{ end }}{{ end }}" />
+  <meta property="og:description" content="{{ $desc }}" />
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  {{ with $ogImage -}}
+  <meta property="og:image" content="{{ . }}" />
+  <meta property="og:image:alt" content="{{ $.Title }}" />
+  {{ end -}}
+  {{ if .IsPage -}}
+  <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+  <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
+  <meta property="article:section" content="{{ .Section | title }}" />
+  {{ with .Params.tags }}{{ range . }}<meta property="article:tag" content="{{ . }}" />
+  {{ end }}{{ end -}}
+  {{ end -}}
+  <meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}" />
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }}{{ end }}{{ end }}" />
+  <meta name="twitter:description" content="{{ $desc }}" />
+  {{ with $ogImage }}<meta name="twitter:image" content="{{ . }}" />
+  {{ end -}}
+  {{ if .IsPage }}
+  {{ $schemaType := "BlogPosting" }}
+  {{ if eq .Section "research" }}{{ $schemaType = "ScholarlyArticle" }}{{ end }}
+  {{ $kw := .Params.keywords | default .Params.tags | default slice }}
+  {{ $authorSchema := dict "@type" "Person" "name" .Site.Params.author.name "url" .Site.BaseURL }}
+  {{ $logoSchema := dict "@type" "ImageObject" "url" ("favicon.svg" | absURL) }}
+  {{ $publisherSchema := dict "@type" "Organization" "name" .Site.Title "logo" $logoSchema }}
+  {{ $mainEntitySchema := dict "@type" "WebPage" "@id" .Permalink }}
+  {{ $articleSchema := dict
+    "@context" "https://schema.org"
+    "@type" $schemaType
+    "headline" .Title
+    "abstract" (.Params.abstract | default "")
+    "description" $desc
+    "image" $ogImage
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "author" $authorSchema
+    "publisher" $publisherSchema
+    "mainEntityOfPage" $mainEntitySchema
+    "url" .Permalink
+    "keywords" (delimit $kw ", ")
+  }}
+  <script type="application/ld+json">{{ $articleSchema | jsonify | safeJS }}</script>
+  {{ end }}
+  {{ if .IsHome }}
+  {{ $addressSchema := dict "@type" "PostalAddress" "addressLocality" "Petaling Jaya" "addressRegion" "Selangor" "addressCountry" "MY" }}
+  {{ $sameAsSchema := slice (printf "https://github.com/%s" .Site.Params.social.github) }}
+  {{ $knowsAboutSchema := slice "Software engineering" "Admissions systems" "Automation" "Cloud infrastructure" "Kubernetes" "AWS" "Google Cloud" "Linux" "Networking" "Embedded systems" "Electronics" "Cybersecurity" "Edge computing" "Computation offloading" "Simulation" }}
+  {{ $personSchema := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" .Site.Params.author.name
+    "jobTitle" .Site.Params.role
+    "description" .Site.Params.description
+    "url" .Site.BaseURL
+    "email" .Site.Params.author.email
+    "address" $addressSchema
+    "sameAs" $sameAsSchema
+    "knowsAbout" $knowsAboutSchema
+  }}
+  <script type="application/ld+json">{{ $personSchema | jsonify | safeJS }}</script>
+  {{ end }}
+</head>

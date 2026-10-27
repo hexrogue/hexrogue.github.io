@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="400" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">THE DRIVER HAS AN ALLOWLIST</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="52" width="300" height="292"/>
+<rect x="360" y="52" width="300" height="292" stroke="#FF2A2A"/>
+</g>
+<text x="36" y="80" fill="#EAEAEA">inside the wifi driver</text>
+<text x="376" y="80" fill="#EAEAEA">the override</text>
+
+<g fill="#a8a8a8" font-size="14">
+<text x="36" y="120">beacon</text>
+<text x="150" y="120">0x80</text>
+<text x="36" y="152">probe request</text>
+<text x="150" y="152">0x40</text>
+<text x="36" y="184">action</text>
+<text x="150" y="184">0xd0</text>
+<text x="36" y="216">plain data</text>
+<text x="150" y="216">0x08</text>
+</g>
+<g fill="#EAEAEA" font-size="14">
+<text x="240" y="120">pass</text>
+<text x="240" y="152">pass</text>
+<text x="240" y="184">pass</text>
+<text x="240" y="216">pass</text>
+</g>
+<text x="36" y="248" fill="#FF2A2A" font-size="14">deauth</text>
+<text x="150" y="248" fill="#FF2A2A" font-size="14">0xc0</text>
+<text x="210" y="248" fill="#FF2A2A" font-size="14">log and reject</text>
+<line x1="36" y1="264" x2="304" y2="264" stroke="#2a2a2a"/>
+<text x="36" y="292" fill="#a8a8a8" font-size="13">The gate is a function inside the binary,</text>
+<text x="36" y="312" fill="#a8a8a8" font-size="13">and it has a name.</text>
+
+<g fill="#a8a8a8" font-size="13">
+<text x="376" y="120" font-size="13">write a function of the same name</text>
+<text x="376" y="152" font-size="13">return zero, which means all good</text>
+<text x="376" y="184" font-size="13">link both and let the last one win</text>
+</g>
+<text x="376" y="216" fill="#EAEAEA" font-size="13">-Wl,--allow-multiple-definition</text>
+<line x1="376" y1="232" x2="644" y2="232" stroke="#2a2a2a"/>
+<text x="376" y="262" fill="#FF2A2A" font-size="14">deauth done: 30 frames</text>
+<text x="376" y="292" fill="#a8a8a8" font-size="13">My gatekeeper answered instead of</text>
+<text x="376" y="312" fill="#a8a8a8" font-size="13">the driver's own.</text>
+
+<text x="20" y="372" fill="#a8a8a8" font-size="13">Two definitions of one symbol entered the linker, and mine came out the other side.</text>
+</svg>

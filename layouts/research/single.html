@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="post-layout">
+<article class="page research-paper">
+  <header>
+    <p class="telemetry">/// RESEARCH / {{ .Params.paper_type | default "WORKING PAPER" | upper }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    <p class="meta">BY {{ .Params.author | default .Site.Params.author.name | upper }} / <time>{{ .Date.Format "2006-01-02" }}</time> / {{ .ReadingTime }} MIN READ / {{ .Params.status | default "WORKING PAPER" }}</p>
+    {{ with .Params.keywords }}<p class="paper-keywords"><span class="meta">KEYWORDS</span> {{ delimit . " / " }}</p>{{ end }}
+  </header>
+
+  {{ with .Params.abstract }}
+  <div class="paper-abstract">
+    <p class="telemetry">/// ABSTRACT</p>
+    <p>{{ . }}</p>
+  </div>
+  {{ end }}
+
+  {{ .Content }}
+
+  <p class="paper-note">This is a public research-training draft, not a peer-reviewed publication. The simulation code, data, and figures are in the repository so the result can be checked or disproved.</p>
+</article>
+
+<aside class="side-rail">
+  <section>
+    <h2>Paper data</h2>
+    <p>{{ .Params.paper_type | default "Working paper" }}</p>
+    <p><time>{{ .Date.Format "2006-01-02" }}</time></p>
+    <p>{{ .ReadingTime }} MIN READ</p>
+    <p>{{ .Params.status | default "WORKING PAPER" }}</p>
+  </section>
+
+  <section>
+    <h2>Files</h2>
+    <nav>
+      <ul>
+        <li><a href="/data/research/offloading_sweep.csv">Sweep CSV</a></li>
+        <li><a href="/data/research/offloading_summary.json">Summary JSON</a></li>
+        <li><a href="https://github.com/hexrogue/hexrogue.github.io/blob/main/scripts/research/offloading_sim.py">Simulator source</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  {{ with .Params.related }}
+  <section>
+    <h2>Related</h2>
+    <nav>
+      <ul>
+        {{ range . }}{{ with $.Site.GetPage . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}{{ end }}
+      </ul>
+    </nav>
+  </section>
+  {{ end }}
+
+  {{ with .Fragments.Headings }}
+  <section>
+    <h2>On this page</h2>
+    <nav>{{ $.TableOfContents }}</nav>
+  </section>
+  {{ end }}
+</aside>
+</div>
+{{ end }}

@@ -1,0 +1,62 @@
+baseURL: https://hexrogue.github.io/
+locale: en-us
+title: "Muhammad Nuh"
+description: "Fullstack developer in Malaysia. APEL.A, automation, internal tools, cloud, networks, embedded systems, and research training in edge computing."
+
+params:
+  author:
+    name: "Muhammad Nuh"
+    email: "ikanlemas0@gmail.com"
+  role: "Fullstack Developer"
+  location: "Petaling Jaya, Malaysia"
+  timezone: "UTC+8"
+  availability: "Open to full-time roles and freelance work"
+  description: "Fullstack developer in Malaysia. I build APEL.A, automation, internal tools, cloud systems, and embedded projects. I also keep a public research notebook on edge computing."
+  social:
+    github: "hexrogue"
+  resume: "/files/resume.pdf"
+  cv: "/files/cv.pdf"
+  research: "/research/"
+  ogImage: "/images/og-default.png"
+
+menu:
+  main:
+    - identifier: projects
+      name: Work
+      url: /projects/
+      weight: 1
+    - identifier: blogs
+      name: Writing
+      url: /blog/
+      weight: 2
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 3
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 4
+    - identifier: resume
+      name: Resume
+      url: /files/resume.pdf
+      weight: 5
+    - identifier: cv
+      name: CV
+      url: /files/cv.pdf
+      weight: 6
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 7
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ["$$", "$$"]]
+          inline: [['\(', '\)']]
+        enable: true

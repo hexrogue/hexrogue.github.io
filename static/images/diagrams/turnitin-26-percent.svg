@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="760" height="420" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">WHAT THE 26% ACTUALLY MEASURES</text>
+<defs>
+<marker id="tn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#EAEAEA"/>
+</marker>
+<marker id="tr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#FF2A2A"/>
+</marker>
+</defs>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="80" width="200" height="80"/>
+<rect x="270" y="80" width="200" height="80"/>
+<rect x="520" y="80" width="220" height="80"/>
+<rect x="300" y="230" width="380" height="100"/>
+</g>
+
+<text x="40" y="110">4,041 words</text>
+<text x="40" y="134" font-size="13" fill="#a8a8a8">in the PDF</text>
+
+<text x="290" y="110">model selects</text>
+<text x="290" y="134" font-size="13" fill="#a8a8a8">long-form prose only</text>
+
+<text x="540" y="110">scores overlapping</text>
+<text x="540" y="134" font-size="13" fill="#a8a8a8">chunks, not sentences</text>
+
+<line x1="220" y1="120" x2="266" y2="120" stroke="#EAEAEA" marker-end="url(#tn)"/>
+<line x1="470" y1="120" x2="516" y2="120" stroke="#EAEAEA" marker-end="url(#tn)"/>
+
+<path d="M630 160 C 630 205, 560 215, 500 226" fill="none" stroke="#FF2A2A" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#tr)"/>
+
+<text x="320" y="270" font-size="15" fill="#FF2A2A">26%</text>
+<text x="380" y="268">of qualifying text</text>
+<text x="320" y="298" font-size="13" fill="#a8a8a8">the share the model decided to score</text>
+
+<text x="20" y="370" font-size="13" fill="#a8a8a8">Not 26% of the submission.</text>
+<text x="250" y="370" font-size="13" fill="#a8a8a8">Not a 26% chance of misconduct.</text>
+<text x="520" y="370" font-size="13" fill="#FF2A2A">Denominator not shown.</text>
+
+<text x="20" y="398" font-size="13" fill="#EAEAEA">The report gives you a percentage and hides the thing it is a percentage of.</text>
+</svg>

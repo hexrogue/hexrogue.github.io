@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="400" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">A BOUNCER AT THE PHONE BOOK</text>
+<defs>
+<marker id="dn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#EAEAEA"/>
+</marker>
+<marker id="dr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#FF2A2A"/>
+</marker>
+</defs>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="90" width="150" height="90"/>
+<rect x="230" y="56" width="210" height="150"/>
+<rect x="500" y="60" width="160" height="90"/>
+<rect x="230" y="248" width="210" height="76"/>
+</g>
+<text x="36" y="120" fill="#EAEAEA">your device</text>
+<text x="36" y="144" fill="#a8a8a8" font-size="13">where is</text>
+<text x="36" y="164" fill="#a8a8a8" font-size="13">ads.example?</text>
+
+<line x1="170" y1="135" x2="226" y2="135" stroke="#EAEAEA" marker-end="url(#dn)"/>
+
+<text x="246" y="86" fill="#EAEAEA">the filter</text>
+<text x="246" y="112" fill="#a8a8a8" font-size="13">is this domain on</text>
+<text x="246" y="132" fill="#a8a8a8" font-size="13">the blocklist?</text>
+
+<line x1="440" y1="95" x2="496" y2="95" stroke="#EAEAEA" marker-end="url(#dn)"/>
+<text x="446" y="86" fill="#a8a8a8" font-size="12">allowed</text>
+<text x="516" y="92" fill="#EAEAEA">real resolver</text>
+<text x="516" y="118" fill="#a8a8a8" font-size="13">the honest answer</text>
+
+<line x1="335" y1="206" x2="335" y2="244" stroke="#FF2A2A" stroke-width="2" marker-end="url(#dr)"/>
+<text x="347" y="232" fill="#FF2A2A" font-size="13">blocked</text>
+<text x="246" y="278" fill="#FF2A2A">0.0.0.0</text>
+<text x="246" y="304" fill="#a8a8a8" font-size="13">nowhere, and it moves on</text>
+
+<text x="20" y="356" fill="#a8a8a8" font-size="13">One filter answers the whole house, because the router hands out its address.</text>
+<text x="20" y="380" fill="#EAEAEA" font-size="13">The log is the honest part: one in five questions is junk nobody needed.</text>
+</svg>

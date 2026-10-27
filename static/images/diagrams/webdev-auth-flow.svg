@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="430" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">WHY YOU STORE FINGERPRINTS</text>
+<defs>
+<marker id="wd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#EAEAEA"/>
+</marker>
+</defs>
+
+<text x="20" y="64" fill="#a8a8a8" font-size="13">sign up</text>
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="74" width="170" height="90"/>
+<rect x="250" y="74" width="200" height="90"/>
+<rect x="510" y="74" width="150" height="90"/>
+</g>
+<text x="36" y="104" fill="#EAEAEA">the browser</text>
+<text x="36" y="130" fill="#a8a8a8" font-size="13">types hunter2</text>
+<text x="266" y="104" fill="#EAEAEA">the server</text>
+<text x="266" y="130" fill="#a8a8a8" font-size="13">hash it, salted</text>
+<text x="526" y="104" fill="#EAEAEA">the database</text>
+<text x="526" y="130" fill="#a8a8a8" font-size="13">stores only</text>
+<text x="526" y="150" fill="#a8a8a8" font-size="13">the fingerprint</text>
+<line x1="192" y1="119" x2="246" y2="119" stroke="#EAEAEA" marker-end="url(#wd)"/>
+<line x1="452" y1="119" x2="506" y2="119" stroke="#EAEAEA" marker-end="url(#wd)"/>
+
+<text x="20" y="204" fill="#a8a8a8" font-size="13">log in</text>
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="214" width="170" height="90"/>
+<rect x="250" y="214" width="200" height="90"/>
+<rect x="510" y="214" width="150" height="90"/>
+</g>
+<text x="36" y="244" fill="#EAEAEA">hunter2 again</text>
+<text x="36" y="270" fill="#a8a8a8" font-size="13">same password</text>
+<text x="266" y="244" fill="#EAEAEA">hash and compare</text>
+<text x="266" y="270" fill="#a8a8a8" font-size="13">against the stored one</text>
+<text x="526" y="244" fill="#EAEAEA">match</text>
+<text x="526" y="270" fill="#a8a8a8" font-size="13">or refuse</text>
+<line x1="192" y1="259" x2="246" y2="259" stroke="#EAEAEA" marker-end="url(#wd)"/>
+<line x1="452" y1="259" x2="506" y2="259" stroke="#EAEAEA" marker-end="url(#wd)"/>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="330" width="640" height="76"/>
+</g>
+<text x="36" y="360" fill="#FF2A2A" font-size="13">On a match the server sets an HttpOnly cookie the browser cannot hand to scripts.</text>
+<text x="36" y="384" fill="#a8a8a8" font-size="13">The password never leaves the server, and the database never held it anyway.</text>
+</svg>

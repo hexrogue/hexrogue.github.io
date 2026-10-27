@@ -1,0 +1,69 @@
+name: Deploy Hugo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Render mermaid diagrams
+        run: |
+          npm install -g @mermaid-js/mermaid-cli@11
+          npx --yes @puppeteer/browsers install chrome@stable --path "$RUNNER_TEMP/browsers"
+          export PUPPETEER_EXECUTABLE_PATH="$RUNNER_TEMP"/browsers/chrome/*/chrome-linux64/chrome
+          node scripts/render-mermaid.mjs
+
+      - name: Build
+        env:
+          # Accept both name styles from repository variables or secrets.
+          HUGO_PARAMS_POSTHOG_PROJECT_TOKEN: ${{ vars.POSTHOG_PROJECT_TOKEN || vars.HUGO_PARAMS_POSTHOG_PROJECT_TOKEN || secrets.POSTHOG_PROJECT_TOKEN || secrets.HUGO_PARAMS_POSTHOG_PROJECT_TOKEN }}
+          HUGO_PARAMS_POSTHOG_HOST: ${{ vars.POSTHOG_HOST || vars.HUGO_PARAMS_POSTHOG_HOST || secrets.POSTHOG_HOST || secrets.HUGO_PARAMS_POSTHOG_HOST }}
+        run: |
+          echo "PostHog token length: ${#HUGO_PARAMS_POSTHOG_PROJECT_TOKEN}"
+          echo "PostHog host: ${HUGO_PARAMS_POSTHOG_HOST}"
+          hugo --minify
+          if ! grep -q 'posthog-js' public/index.html; then
+            echo "::error::PostHog SDK missing. token_len=${#HUGO_PARAMS_POSTHOG_PROJECT_TOKEN} host=${HUGO_PARAMS_POSTHOG_HOST}. Check repository secrets named POSTHOG_PROJECT_TOKEN/POSTHOG_HOST or HUGO_PARAMS_POSTHOG_PROJECT_TOKEN/HUGO_PARAMS_POSTHOG_HOST."
+            exit 1
+          fi
+          for event in contact_method_selected resume_download_started project_repository_opened; do
+            grep -q "$event" public/index.html || { echo "::error::$event missing from public/index.html"; exit 1; }
+          done
+          for event in blog_filter_applied blog_page_changed; do
+            grep -q "$event" public/blog/index.html || { echo "::error::$event missing from public/blog/index.html"; exit 1; }
+          done
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

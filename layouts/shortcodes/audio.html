@@ -1,0 +1,7 @@
+{{- $src := .Get "src" -}}
+{{- if not $src }}{{ errorf "audio shortcode: missing src" }}{{ end -}}
+<div class="audio-box">
+  <p class="meta">/// SUGGESTED LISTENING</p>
+  {{ with .Get "note" }}<p>{{ . }}</p>{{ end }}
+  <audio controls preload="none" src="{{ $src }}"></audio>
+</div>

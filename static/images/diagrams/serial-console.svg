@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="monospace" font-size="15" fill="#a8a8a8">
+<rect width="680" height="400" fill="#0A0A0A"/>
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="20" width="640" height="360"/>
+<rect x="20" y="20" width="640" height="34"/>
+</g>
+<text x="36" y="44" fill="#EAEAEA">esp32  /dev/ttyUSB0  ·  115200 8N1</text>
+<text x="565" y="44" fill="#FF2A2A">listening</text>
+
+<text x="36" y="88">I (412) boot: ESP32-D0WD 240 MHz, 4 MB flash</text>
+<text x="36" y="112">I (418) wifi: mode : sta (24:6f:28:aa:bb:cc) + softAP</text>
+<text x="36" y="136">I (424) esp_netif: softAP 192.168.4.1/24, DHCP up</text>
+<text x="36" y="160">I (1902) httpd: GET /                        200</text>
+<text x="36" y="184" fill="#EAEAEA">I (2401) httpd: GET /api/scan?yes=1          200</text>
+<text x="36" y="208">I (2402) recon: 14 announcements, 9 networks</text>
+<text x="36" y="232" fill="#EAEAEA">I (3310) httpd: GET /api/deauth?yes=1&amp;bssid=02:11:22:33:44:55</text>
+<text x="36" y="256" fill="#FF2A2A">W (3310) recon: task spawned, fires in 300 ms</text>
+<text x="36" y="280">I (3612) recon: 3 bursts on channel 6</text>
+<text x="36" y="304">I (3613) recon: back to listening</text>
+<rect x="36" y="322" width="9" height="15" fill="#EAEAEA"/>
+
+<text x="20" y="372" font-size="13">The reply goes out before the frame does: the page is done, then the radio talks.</text>
+</svg>

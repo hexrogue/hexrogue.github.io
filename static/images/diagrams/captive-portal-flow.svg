@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="360" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">WHY THE LOGIN PAGE APPEARS BY ITSELF</text>
+<defs>
+<marker id="cf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0 0 L10 5 L0 10 z" fill="#EAEAEA"/>
+</marker>
+</defs>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="30" y="76" width="180" height="90"/>
+<rect x="250" y="76" width="180" height="90"/>
+<rect x="470" y="76" width="180" height="90"/>
+</g>
+<text x="46" y="108" fill="#EAEAEA">your phone</text>
+<text x="46" y="134" fill="#a8a8a8" font-size="13">asks for a known URL</text>
+<text x="266" y="108" fill="#EAEAEA">the portal</text>
+<text x="266" y="134" fill="#a8a8a8" font-size="13">192.168.4.1</text>
+<text x="486" y="108" fill="#EAEAEA">login page</text>
+<text x="486" y="134" fill="#a8a8a8" font-size="13">appears</text>
+
+<g stroke="#EAEAEA" marker-end="url(#cf)">
+<line x1="212" y1="121" x2="246" y2="121"/>
+<line x1="432" y1="121" x2="466" y2="121"/>
+</g>
+<text x="230" y="66" fill="#a8a8a8" font-size="13" text-anchor="middle">DNS</text>
+<text x="450" y="66" fill="#a8a8a8" font-size="13" text-anchor="middle">HTTP 302</text>
+<text x="230" y="188" fill="#a8a8a8" font-size="13" text-anchor="middle">every name is answered</text>
+<text x="450" y="188" fill="#a8a8a8" font-size="13" text-anchor="middle">to the portal page</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="30" y="212" width="620" height="140"/>
+</g>
+<text x="46" y="246" fill="#EAEAEA" font-size="13">The phone checks a known URL and expects an exact answer: a 204, a word.</text>
+<text x="46" y="272" fill="#a8a8a8" font-size="13">Anything else means the internet is not there, so the OS shows the popup.</text>
+<text x="46" y="302" fill="#FF2A2A" font-size="13">The portal fails the check on purpose. Failing is the signal.</text>
+<text x="46" y="330" fill="#a8a8a8" font-size="13">Plain HTTP is why the redirect works. HTTPS stops it.</text>
+</svg>

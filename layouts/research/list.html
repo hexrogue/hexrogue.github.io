@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="page">
+  <p class="telemetry">/// RESEARCH TRAINING</p>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <div class="section-head">
+    <div>
+      <p class="telemetry">/// DRAFTS</p>
+      <h2>Current work</h2>
+    </div>
+    <a class="section-link" href="/blog/">Writing &gt;&gt;&gt;</a>
+  </div>
+
+  <div class="project-grid">
+    {{ range .Pages.ByWeight }}
+    <article class="project-card">
+      <div class="work-top">
+        {{ with .Params.status }}<span class="badge">{{ . }}</span>{{ end }}
+        {{ with .Params.paper_type }}<span class="meta">{{ . }}</span>{{ end }}
+      </div>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Description }}</p>
+      {{ with .Params.keywords }}
+      <div class="tech-tags">{{ range first 4 . }}`{{ . }}` {{ end }}</div>
+      {{ end }}
+      <a class="read-more" href="{{ .RelPermalink }}">&gt;&gt;&gt; READ THE DRAFT</a>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

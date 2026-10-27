@@ -1,0 +1,3 @@
+{{- $hash := substr (sha256 (strings.TrimSpace .Inner)) 0 16 -}}
+{{- $alt := .Attributes.alt | default "Diagram" -}}
+<img src="/images/diagrams/mermaid-{{ $hash }}.svg" alt="{{ $alt }}" loading="lazy">

@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <span>/// &copy; {{ now.Year }} {{ .Site.Params.author.name | default .Site.Title }}</span>
+  <span class="footer-links">
+    {{ with .Site.Params.author.email }}<a href="mailto:{{ . }}">EMAIL</a>{{ end }}
+    {{ with .Site.Params.social.github }}<a href="https://github.com/{{ . }}">GITHUB</a>{{ end }}
+    {{ with .Site.Params.research }}<a href="{{ . | relURL }}">RESEARCH</a>{{ end }}
+    {{ with .Site.Params.resume }}<a href="{{ . | relURL }}">RESUME</a>{{ end }}
+    {{ with .Site.Params.cv }}<a href="{{ . | relURL }}">CV</a>{{ end }}
+  </span>
+</footer>

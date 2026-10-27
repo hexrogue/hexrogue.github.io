@@ -1,0 +1,43 @@
+{
+  "theme": "base",
+  "htmlLabels": false,
+  "themeVariables": {
+    "fontFamily": "JetBrains Mono, ui-monospace, monospace",
+    "fontSize": "16px",
+    "background": "#0A0A0A",
+    "primaryColor": "#141414",
+    "primaryTextColor": "#EAEAEA",
+    "primaryBorderColor": "#3a3a3a",
+    "secondaryColor": "#1a1a1a",
+    "tertiaryColor": "#101010",
+    "lineColor": "#8a8a8a",
+    "textColor": "#EAEAEA",
+    "edgeLabelBackground": "#0A0A0A",
+    "nodeBorder": "#3a3a3a",
+    "clusterBkg": "#0f0f0f",
+    "clusterBorder": "#2a2a2a",
+    "titleColor": "#EAEAEA",
+    "actorBkg": "#141414",
+    "actorBorder": "#3a3a3a",
+    "actorTextColor": "#EAEAEA",
+    "actorLineColor": "#8a8a8a",
+    "signalColor": "#EAEAEA",
+    "signalTextColor": "#EAEAEA",
+    "labelBoxBorderColor": "#FF2A2A",
+    "labelTextColor": "#EAEAEA",
+    "noteBkgColor": "#141414",
+    "noteBorderColor": "#FF2A2A",
+    "noteTextColor": "#EAEAEA",
+    "activationBkgColor": "#FF2A2A",
+    "sequenceNumberColor": "#0A0A0A"
+  },
+  "flowchart": {
+    "curve": "linear",
+    "htmlLabels": false,
+    "useMaxWidth": true
+  },
+  "sequence": {
+    "useMaxWidth": true
+  },
+  "securityLevel": "strict"
+}

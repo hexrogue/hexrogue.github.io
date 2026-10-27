@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" font-family="monospace" font-size="15" fill="#EAEAEA">
+<rect width="680" height="400" fill="#0A0A0A"/>
+<text x="20" y="30" font-size="17" fill="#FF2A2A">THE THREE FAMILIES</text>
+<text x="430" y="30" fill="#a8a8a8" font-size="13">type bits 00 / 01 / 10</text>
+
+<g stroke="#2a2a2a" fill="#121212">
+<rect x="20" y="52" width="200" height="308"/>
+<rect x="240" y="52" width="200" height="308"/>
+<rect x="460" y="52" width="200" height="308"/>
+</g>
+
+<text x="36" y="80" font-size="15" fill="#EAEAEA">MANAGEMENT 00</text>
+<g fill="#a8a8a8" font-size="14">
+<text x="36" y="116">beacon <tspan fill="#EAEAEA">0x80</tspan></text>
+<text x="36" y="148">probe req <tspan fill="#EAEAEA">0x40</tspan></text>
+<text x="36" y="180">probe resp <tspan fill="#EAEAEA">0x50</tspan></text>
+<text x="36" y="212">auth <tspan fill="#EAEAEA">0xB0</tspan></text>
+<text x="36" y="244">assoc req <tspan fill="#EAEAEA">0x00</tspan></text>
+<text x="36" y="276">disassoc <tspan fill="#EAEAEA">0xA0</tspan></text>
+<text x="36" y="308" fill="#FF2A2A">deauth <tspan fill="#FF2A2A">0xC0</tspan></text>
+</g>
+<text x="36" y="342" fill="#FF2A2A" font-size="13">always plaintext</text>
+
+<text x="256" y="80" font-size="15" fill="#EAEAEA">CONTROL 01</text>
+<g fill="#a8a8a8" font-size="14">
+<text x="256" y="116">ACK <tspan fill="#EAEAEA">0xD4</tspan></text>
+<text x="256" y="148">RTS <tspan fill="#EAEAEA">0xB4</tspan></text>
+<text x="256" y="180">CTS <tspan fill="#EAEAEA">0xC4</tspan></text>
+<text x="256" y="212">PS-Poll <tspan fill="#EAEAEA">0xA4</tspan></text>
+<text x="256" y="244">block ack <tspan fill="#EAEAEA">0x94</tspan></text>
+</g>
+<text x="256" y="342" fill="#a8a8a8" font-size="13">tiny, no payload</text>
+
+<text x="476" y="80" font-size="15" fill="#EAEAEA">DATA 10</text>
+<g fill="#a8a8a8" font-size="14">
+<text x="476" y="116">data <tspan fill="#EAEAEA">0x08</tspan></text>
+<text x="476" y="148">QoS data <tspan fill="#EAEAEA">0x88</tspan></text>
+<text x="476" y="180">null <tspan fill="#EAEAEA">0x48</tspan></text>
+</g>
+<text x="476" y="326" fill="#a8a8a8" font-size="13">sealed payload,</text>
+<text x="476" y="346" fill="#a8a8a8" font-size="13">clear header</text>
+
+<text x="20" y="386" fill="#a8a8a8" font-size="14">subtype 4 bits + type 2 bits + version 2 bits = the first byte of every frame</text>
+</svg>
