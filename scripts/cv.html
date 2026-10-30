@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Muhammad Nuh - Curriculum Vitae</title>
+<!-- Regenerate: chromium --headless --disable-gpu --no-sandbox --print-to-pdf=static/files/cv.pdf --no-pdf-header-footer scripts/cv.html -->
 <style>
   @page { size: A4; margin: 10mm 12mm; }
   * { box-sizing: border-box; }
@@ -112,7 +113,7 @@
   <section>
     <h2>Selected Impact</h2>
     <ul class="impact">
-      <li>Built APEL.A, the first APEL.A admissions system in Malaysia: portfolio building, evidence, assessments, interviews, scheduling, payments, and candidate tracking.</li>
+      <li>Delivered the first APEL.A admissions system in Malaysia, replacing forms, email, and spreadsheets with one audited workflow.</li>
       <li>Reduced frontend bundle size by 40% and improved Lighthouse scores on the company site rebuild.</li>
       <li>Replaced third-party WhatsApp SaaS with a self-hosted Go gateway supporting messaging, VoIP, and real-time events.</li>
     </ul>
@@ -122,7 +123,7 @@
     <h2>Professional Experience</h2>
     <div class="line"><h3>Fullstack Developer / SKC Education Global</h3><span class="when">OCT 2025 - PRESENT</span></div>
     <ul>
-      <li>Built APEL.A, the first APEL.A admissions system in Malaysia: portfolio builder, evidence uploads, exams, interviews, scheduling, payments, and candidate tracking.</li>
+      <li>Built APEL.A, the first APEL.A admissions system in Malaysia: a 23-step workflow engine with audit trails, MediaPipe exam proctoring, WebRTC live monitoring, nine-role access control, portfolio PDF export, and FPX payments.</li>
       <li>Built and maintain the admissions CRM: lead pipeline, role-based access, study-plan PDF generation, WhatsApp automation, and commission tracking.</li>
       <li>Built SKC Central, the internal operations platform for finance, scheduling, teaching records, and admin.</li>
       <li>Developed a Go-based WhatsApp gateway with VoIP support, deployed with Docker.</li>
@@ -146,8 +147,13 @@
     <h2>Selected Projects</h2>
     <div class="project">
       <div class="line"><h3>APEL.A Admissions Portal</h3><span class="when">PRIVATE CLIENT / 2026 - PRESENT</span></div>
-      <p class="stack">Next.js, TypeScript, PostgreSQL, Drizzle, Better Auth, Puppeteer</p>
-      <p>First APEL.A admissions system in Malaysia. Candidate portal, portfolio builder, competency checklist, evidence uploads, exam and interview scheduling, proctoring signals, payments, finance, audit trails, and read-only share links.</p>
+      <p class="stack">Next.js, TypeScript, PostgreSQL, Drizzle, Better Auth, MediaPipe, WebRTC, Puppeteer, ToyyibPay &middot; 101 routes, 45 tables</p>
+      <ul>
+        <li><b>Workflow engine:</b> 23 steps across application, payment, aptitude, portfolio, interview, and completion, with validated transitions and an audit record for every change.</li>
+        <li><b>Exam proctoring:</b> MediaPipe face and object detection in the browser (no face, multiple faces, looking away, phone, book), plus WebRTC live monitoring and replay. Signals are evidence, not auto-fail.</li>
+        <li><b>Access and payments:</b> nine roles with per-user overrides that only narrow access, server-side checks on every route, ToyyibPay FPX with manual verification fallback, and PDF receipts.</li>
+        <li><b>Documents:</b> structured portfolio builder with evidence, referees, and signature; server-rendered official PDF with merged evidence and image compression.</li>
+      </ul>
     </div>
     <div class="project">
       <div class="line"><h3>Admissions CRM</h3><span class="when">PRIVATE CLIENT / 2025 - PRESENT</span></div>
@@ -199,7 +205,7 @@
         <p><b>Frontend</b> Next.js, React, Tailwind CSS, Hugo, TanStack Table/Query</p>
         <p><b>Backend</b> Node.js, Express, PostgreSQL, SQLite, MySQL, Redis, Drizzle, Prisma, Better Auth</p>
         <p><b>Cloud &amp; Infra</b> AWS (S3, Lambda, EC2, CloudFront), Google Cloud, Kubernetes, Docker, Cloudflare Workers/D1/KV, Vercel, Nginx, Caddy</p>
-        <p><b>Automation</b> Puppeteer, pdf-lib, pagedjs, ExcelJS, Nodemailer, WhatsApp APIs</p>
+        <p><b>Automation</b> Puppeteer, pdf-lib, pagedjs, ExcelJS, Nodemailer, MediaPipe, WebRTC, ToyyibPay, WhatsApp APIs</p>
         <p><b>Research</b> Python, NumPy, Matplotlib, Monte Carlo, discrete-event simulation, queueing, data analysis</p>
       </div>
       <div>
@@ -207,7 +213,7 @@
         <p><b>Security</b> Burp Suite, Ghidra, radare2, Frida, GDB, Nmap, Metasploit</p>
         <p><b>Hardware</b> ESP32, ESP-IDF, C, sensors, serial, electronics, hardware debugging</p>
         <p><b>Systems</b> Arch Linux, Ubuntu, Debian, Proxmox, Git, CI/CD, Neovim, Tmux</p>
-        <p><b>Practices</b> Role-based access, audit trails, test harnesses, data migration, technical writing</p>
+        <p><b>Practices</b> Role-based access, audit trails, workflow engines, test harnesses, data migration, technical writing</p>
       </div>
     </div>
   </section>
