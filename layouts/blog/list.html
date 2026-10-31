@@ -11,23 +11,36 @@
       {{ range . }}
       <li>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <span class="meta"><time>{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.tags }} / {{ delimit . ", " }}{{ end }}</span>
+        <span class="meta"><time>{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.tags }} / {{ delimit (first 2 .) ", " }}{{ end }}</span>
       </li>
       {{ end }}
     </ul>
   </section>
   {{ end }}
+  {{/* Only tags that carry more than a couple of posts earn a slot; the long tail
+       stays reachable through /tags/ and on each post. */}}
+  {{ $counts := dict }}
+  {{ range .Pages }}
+    {{ range .Params.tags }}
+      {{ $counts = merge $counts (dict . (add (index $counts . | default 0) 1)) }}
+    {{ end }}
+  {{ end }}
+  {{ $chips := slice }}
+  {{ range $tag, $n := $counts }}
+    {{ if ge $n 3 }}{{ $chips = $chips | append (dict "name" $tag "count" $n) }}{{ end }}
+  {{ end }}
   <div class="filter-row" role="group" aria-label="Filter by category">
     <button data-filter="all" aria-pressed="true">[ ALL ]</button>
-    {{ range $tag, $_ := $.Site.Taxonomies.tags }}
-    <button data-filter="{{ $tag | urlize }}" aria-pressed="false">[ {{ $tag | upper }} ]</button>
+    {{ range (sort $chips "count" "desc") }}
+    <button data-filter="{{ .name | urlize }}" aria-pressed="false">[ {{ .name | upper }} ]</button>
     {{ end }}
+    <a class="filter-all" href="{{ "tags/" | relURL }}">ALL TAGS &gt;&gt;&gt;</a>
   </div>
   <ul class="index-list" id="filter-target">
     {{ range complement $featured .Pages.ByDate.Reverse }}
     <li data-tags="{{ with .Params.tags }}{{ delimit (apply . "urlize" ".") " " }}{{ end }}">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <span class="meta"><time>{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.tags }} / {{ delimit . ", " }}{{ end }}</span>
+      <span class="meta"><time>{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.tags }} / {{ delimit (first 2 .) ", " }}{{ end }}</span>
     </li>
     {{ end }}
   </ul>

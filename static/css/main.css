@@ -311,8 +311,14 @@ a.post-nav-cell:hover .post-nav-title { color: var(--brut-red); }
 .index-list li[hidden] { display: none; }
 @media (max-width: 640px) {
   .filter-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.5rem; }
-  .filter-row button { flex: 0 0 auto; }
+  .filter-row button, .filter-row .filter-all { flex: 0 0 auto; }
 }
+.filter-row .filter-all {
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em;
+  text-decoration: none; color: var(--brut-dim); padding: 0.35rem 0.6rem;
+  border: 1px solid transparent;
+}
+.filter-row .filter-all:hover { color: var(--brut-red); border-color: var(--brut-line); }
 .filter-row button {
   font-family: var(--font-mono);
   font-size: 0.7rem;
