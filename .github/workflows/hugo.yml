@@ -31,7 +31,12 @@ jobs:
         run: |
           npm install -g @mermaid-js/mermaid-cli@11
           npx --yes @puppeteer/browsers install chrome@stable --path "$RUNNER_TEMP/browsers"
-          export PUPPETEER_EXECUTABLE_PATH="$RUNNER_TEMP"/browsers/chrome/*/chrome-linux64/chrome
+          # The installed path is versioned, and `export VAR=.../*/chrome` does not
+          # expand. Resolve the binary once and hand it to the script explicitly.
+          CHROME=$(find "$RUNNER_TEMP/browsers/chrome" -type f -name chrome -path '*chrome-linux64*' | head -1)
+          test -x "$CHROME" || { echo "::error::Chrome binary not found under $RUNNER_TEMP/browsers"; exit 1; }
+          echo "PUPPETEER_EXECUTABLE_PATH=$CHROME" >> "$GITHUB_ENV"
+          echo "Chrome: $CHROME"
           node scripts/render-mermaid.mjs
 
       - name: Build
