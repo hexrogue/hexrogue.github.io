@@ -51,6 +51,7 @@ image: "/images/og-default.png"
 <div class="work-grid">
   <article class="work-card featured">
     <div class="work-top"><span class="badge">PRIVATE CLIENT / FIRST IN MALAYSIA</span><span class="meta">2026 &mdash; PRESENT</span></div>
+    {{< shot src="images/shots/apela-portfolio.webp" alt="APEL.A portfolio builder: nine-part form with an 83-item checklist and PDF export" crop="true" >}}
     <h3><a href="/projects/apela/">APEL.A Admissions Portal</a></h3>
     <p>The first APEL.A admissions system in Malaysia. Candidates build a portfolio, upload evidence, sit a proctored assessment, pay, and track the decision in one portal.</p>
     <ul>

@@ -6,6 +6,8 @@ weight: 2
 status: 'PRIVATE CLIENT'
 period: '2025 - PRESENT'
 stack: ['Next.js', 'TypeScript', 'Drizzle', 'PostgreSQL', 'Puppeteer']
+cover: '/images/diagrams/mermaid-39b331d3023a3fe8.svg'
+coverAlt: 'Admissions CRM architecture: workspace, server actions, PostgreSQL, PDF pipeline, WhatsApp gateway'
 ---
 
 Private client work. Source and client data are not public. This is the outline I can share.
@@ -31,9 +33,24 @@ The APEL.A portfolio side grew into its own portal: [APEL.A Admissions Portal](/
 
 The team works from one system instead of five disconnected ones. Documents that used to be assembled by hand are generated from the same data that drives the pipeline. The repetitive parts are automated, the handover is easier, and the advisors can spend their time on people instead of copy-paste.
 
+Programme variation is data, not code: MBA, MIM, MEdu, and RPEL each carry their own durations and fee structures, so an admin adds a programme, majoring, or intake without waiting for a deploy.
+
 ## Stack
 
 Next.js, TypeScript, Drizzle, PostgreSQL, Puppeteer, and a Go WhatsApp gateway.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  UI[Advisor workspace] --> ACT[Server actions]
+  ACT --> DB[(PostgreSQL)]
+  ACT --> PDF[PDF pipeline]
+  PDF --> OUT[Branded study plan]
+  ACT --> WA[WhatsAPI gateway]
+  WA --> WAN[WhatsApp network]
+  ACT --> SMTP[SMTP per PIC]
+```
 
 ## Notes
 

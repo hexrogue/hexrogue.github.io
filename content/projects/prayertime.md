@@ -6,6 +6,12 @@ weight: 8
 status: 'OPEN SOURCE'
 period: '2026'
 stack: ['Go', 'Bubble Tea', 'SQLite']
+cover: 'images/shots/prayertime-code.webp'
+coverAlt: 'PrayerTime Go source in nvim with the prayer time calculation functions open'
+gallery:
+  - src: 'images/shots/prayertime-demo.webp'
+    alt: 'PrayerTime terminal interface showing the day prayer times'
+    caption: 'The terminal app running offline, with no network call and no API key.'
 ---
 
 Open source: [github.com/hexrogue/PrayerTime](https://github.com/hexrogue/PrayerTime).

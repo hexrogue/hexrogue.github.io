@@ -1,0 +1,7 @@
+{{- /* {{< shot src="images/shots/apela-exam.webp" alt="..." caption="..." crop="true" >}} */ -}}
+{{- partial "shot.html" (dict
+  "src" (.Get "src")
+  "alt" (.Get "alt")
+  "caption" (.Get "caption")
+  "crop" (eq (.Get "crop") "true")
+) -}}

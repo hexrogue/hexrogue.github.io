@@ -6,6 +6,8 @@ weight: 9
 status: 'OPEN SOURCE'
 period: '2026'
 stack: ['TypeScript', 'Cloudflare Workers', 'D1']
+cover: '/images/diagrams/mermaid-52da2ccf7bf6ee24.svg'
+coverAlt: 'Xray Workers architecture: client to Cloudflare Worker speaking VLESS over WebSocket, with users stored in D1'
 ---
 
 Open source: [github.com/hexrogue/xray-worker](https://github.com/hexrogue/xray-worker).
@@ -30,6 +32,15 @@ A personal proxy that runs at the edge with almost no operational overhead. The 
 ## Stack
 
 TypeScript, Cloudflare Workers, D1.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  CL[Client] --> WK[Cloudflare Worker]
+  WK --> VL[VLESS over WebSocket]
+  WK --> D1[(D1 users)]
+```
 
 ## Notes
 

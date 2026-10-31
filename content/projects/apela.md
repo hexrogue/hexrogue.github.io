@@ -6,6 +6,15 @@ weight: 1
 status: 'PRIVATE CLIENT / FIRST IN MALAYSIA'
 period: '2026 - PRESENT'
 stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Drizzle', 'Better Auth', 'MediaPipe', 'WebRTC', 'Puppeteer', 'Tailwind CSS']
+cover: 'images/shots/apela-portfolio.webp'
+coverAlt: 'APEL.A portfolio builder: nine-part form, 83-item checklist, PDF export'
+gallery:
+  - src: 'images/shots/apela-exam.webp'
+    alt: 'APEL.A aptitude test runner with countdown, question navigator, invigilator chat and live camera and microphone panel'
+    caption: 'The exam runner: timed, navigable, with the camera and microphone panel required for the sitting.'
+  - src: 'images/shots/apela-track.webp'
+    alt: 'APEL.A tracking page showing every stage complete with share and copy links'
+    caption: 'Candidate tracking: every stage visible, shareable, and printable without an account.'
 ---
 
 Private client work. The source and candidate data are not public. This is the outline I can share.
@@ -57,6 +66,20 @@ For scale: 101 API route handlers, 45 database tables, 46 versioned migrations, 
 ## The Result
 
 The admissions team works from one system instead of a chain of forms, inboxes, and spreadsheets. Candidates can see where they are. Assessors can see what they have to do. Finance can see what has been paid. The first APEL.A admissions system in Malaysia is running on the same codebase.
+
+The candidate side is one form, not a folder: a nine-part portfolio with an 83-item checklist and PDF export, a four-part aptitude test behind a 50% pass mark, six entry levels from T-4 to T-7, and the whole interface in English and Bahasa Melayu.
+
+```mermaid
+flowchart LR
+  A[Applying candidate] --> B[Portfolio builder]
+  B --> C[Aptitude test]
+  A --> D[Payment]
+  C --> E[Interview]
+  D --> E
+  E --> F[Decision and completion]
+  A --> G[Track application]
+  F --> G
+```
 
 ## Stack
 

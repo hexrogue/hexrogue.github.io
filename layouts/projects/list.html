@@ -12,6 +12,7 @@
         {{ with .Params.period }}<span class="meta">{{ . }}</span>{{ end }}
       </div>
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.cover }}{{ partial "shot.html" (dict "src" . "alt" ($.Params.coverAlt | default $.Title) "crop" true) }}{{ end }}
       <p>{{ .Description }}</p>
       {{ with .Params.stack }}
       <div class="tech-tags">{{ range . }}`{{ . }}` {{ end }}</div>

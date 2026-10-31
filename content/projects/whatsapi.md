@@ -6,6 +6,8 @@ weight: 3
 status: 'PRIVATE'
 period: '2025 - PRESENT'
 stack: ['Go', 'whatsmeow', 'Docker', 'WebSocket']
+cover: '/images/diagrams/mermaid-bf1b3c9ad1c12ad8.svg'
+coverAlt: 'WhatsAPI architecture: Go gateway between the CRM, a WhatsApp session, WebSocket events and VoIP call control'
 ---
 
 Private project. Source is not public. This is the outline I can share.
@@ -31,6 +33,17 @@ The CRM can send follow-ups, deliver documents, capture inbound leads, and handl
 ## Stack
 
 Go, whatsmeow, Docker, WebSocket.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  CRM[CRM] --> GW[Go gateway]
+  GW --> DEV[WhatsApp session]
+  DEV --> NET[WhatsApp network]
+  GW --> WS[WebSocket events]
+  GW --> CALL[VoIP call control]
+```
 
 ## Notes
 

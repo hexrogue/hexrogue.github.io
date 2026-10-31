@@ -6,6 +6,8 @@ weight: 5
 status: 'PRIVATE CLIENT'
 period: '2026 - PRESENT'
 stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Drizzle', 'Better Auth', 'TanStack Table', 'Recharts']
+cover: '/images/diagrams/mermaid-088b72da2ef7bc03.svg'
+coverAlt: 'SKC Central architecture: admin and finance surfaces over server actions, PostgreSQL, timetable clash checks, fee ledger and audit log'
 ---
 
 Private client work. Source and business data are not public. This is the outline I can share.
@@ -37,6 +39,18 @@ One staff platform instead of a collection of spreadsheets and single-purpose ap
 ## Stack
 
 Next.js, TypeScript, PostgreSQL, Drizzle ORM, Better Auth, TanStack Table, Recharts, ExcelJS, Vercel Blob, and the usual Linux and Docker deployment plumbing.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  UI[Admin and finance] --> ACT[Server actions]
+  ACT --> DB[(PostgreSQL)]
+  ACT --> TT[Timetable clash check]
+  ACT --> LED[Fees and commissions]
+  ACT --> AUD[Audit log]
+  ACT --> XLS[Excel and CSV export]
+```
 
 ## Notes
 

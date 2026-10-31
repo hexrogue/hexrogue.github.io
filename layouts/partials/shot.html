@@ -1,0 +1,29 @@
+{{- /* Renders one product shot.
+       Context is a dict: src (required), alt, caption, crop (bool).
+       src is either a path under assets/ (resized to WebP) or a published URL/path
+       (used as-is, for the build-time Mermaid SVGs under static/). */ -}}
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $caption := .caption -}}
+{{- $crop := .crop -}}
+{{- $figclass := "shot" -}}
+{{- if $crop }}{{ $figclass = "shot shot--crop" }}{{ end -}}
+{{- $res := resources.Get $src -}}
+{{- if $res -}}
+  {{- $large := $res -}}
+  {{- if gt $large.Width 1200 }}{{ $large = $large.Resize "1200x webp q84" }}{{ end -}}
+  {{- $small := $large.Resize "640x webp q80" -}}
+  <figure class="{{ $figclass }}">
+    <img src="{{ $large.RelPermalink }}" srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $large.RelPermalink }} {{ $large.Width }}w" sizes="(max-width: 760px) 100vw, 620px" width="{{ $large.Width }}" height="{{ $large.Height }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+    {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+{{- else -}}
+  {{- if or (hasPrefix $src "/") (hasPrefix $src "http") -}}
+  <figure class="{{ $figclass }}">
+    <img src="{{ $src | relURL }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+    {{ with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+  {{- else -}}
+    {{- warnf "shot: asset %q not found under assets/" $src -}}
+  {{- end -}}
+{{- end -}}

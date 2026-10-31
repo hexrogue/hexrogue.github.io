@@ -6,6 +6,8 @@ weight: 11
 status: 'LAB PROJECT'
 period: '2026'
 stack: ['ESP32', 'ESP-IDF', 'C', '802.11', 'BLE']
+cover: 'images/shots/esp32-board.webp'
+coverAlt: 'ESP32 development board wired for wifi and BLE capture'
 ---
 
 The long version lives in the blog series: [the driver fight](/blog/esp32-recon-rig-driver-said-no/) and [the build guide](/blog/esp32-recon-rig-build-guide/). This page is the project summary.
