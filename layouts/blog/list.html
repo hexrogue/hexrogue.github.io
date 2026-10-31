@@ -3,6 +3,20 @@
   <p class="telemetry">/// {{ .Title | upper }}</p>
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+  {{ $featured := where .Pages "Params.featured" true }}
+  {{ with $featured }}
+  <section class="featured-posts" aria-labelledby="featured-heading">
+    <p class="telemetry" id="featured-heading">/// START HERE</p>
+    <ul class="index-list">
+      {{ range . }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="meta"><time>{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.tags }} / {{ delimit . ", " }}{{ end }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
   <div class="filter-row" role="group" aria-label="Filter by category">
     <button data-filter="all" aria-pressed="true">[ ALL ]</button>
     {{ range $tag, $_ := $.Site.Taxonomies.tags }}
@@ -10,7 +24,7 @@
     {{ end }}
   </div>
   <ul class="index-list" id="filter-target">
-    {{ range .Pages.ByDate.Reverse }}
+    {{ range complement $featured .Pages.ByDate.Reverse }}
     <li data-tags="{{ with .Params.tags }}{{ delimit (apply . "urlize" ".") " " }}{{ end }}">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       <span class="meta"><time>{{ .Date.Format "2006-01-02" }}</time>{{ with .Params.tags }} / {{ delimit . ", " }}{{ end }}</span>

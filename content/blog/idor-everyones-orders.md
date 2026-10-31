@@ -4,6 +4,7 @@ title: 'The One-Number Bug That Leaked Orders'
 description: 'One changed number in a URL, and I was reading strangers receipts. A bug hunting story.'
 tags: ['security', 'pentesting', 'bugbounty']
 author: nuh
+featured: true
 ---
 
 Some bugs crash your app. The scary ones politely hand you other people's data. I found one of those in a test shop, and it took changing a single number. One number. No exploit kit, no hoodie, no dramatic typing. Just a URL with the confidence of a bad password.

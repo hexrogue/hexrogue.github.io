@@ -13,7 +13,6 @@ image: "/images/og-default.png"
     <div class="cta-row">
       <a href="/projects/">View selected work</a>
       <a href="/files/resume.pdf">Download resume</a>
-      <a href="/files/cv.pdf">Download CV</a>
       <a href="/contact/">Contact</a>
     </div>
   </div>

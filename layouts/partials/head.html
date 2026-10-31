@@ -17,6 +17,9 @@
   <link rel="canonical" href="{{ .Permalink }}" />
   <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}" />
   <meta name="theme-color" content="#0A0A0A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;700&display=swap" />
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
   {{- $posthogToken := os.Getenv "HUGO_PARAMS_POSTHOG_PROJECT_TOKEN" -}}

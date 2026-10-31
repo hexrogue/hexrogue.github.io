@@ -41,10 +41,6 @@ menu:
       name: Resume
       url: /files/resume.pdf
       weight: 5
-    - identifier: cv
-      name: CV
-      url: /files/cv.pdf
-      weight: 6
     - identifier: contact
       name: Contact
       url: /contact/

@@ -1,9 +1,11 @@
-{{ $posts := where site.RegularPages "Type" "blog" | first 6 }}
+{{ $all := (where site.RegularPages "Type" "blog").ByDate.Reverse }}
+{{ $featured := where $all "Params.featured" true }}
+{{ $posts := first 6 (union $featured (complement $featured $all)) }}
 
 {{ if $posts }}
 <div class="blog-grid">
   {{ range $i, $p := $posts }}
-  <a href="{{ $p.RelPermalink }}" class="blog-card">
+  <a href="{{ $p.RelPermalink }}" class="blog-card{{ if $p.Params.featured }} blog-card--featured{{ end }}">
     <p class="file-no">FILE_{{ printf "%02d" (add $i 1) }} /// <time>{{ $p.Date.Format "2006-01-02" }}</time></p>
     <h3>{{ $p.Title }}</h3>
     <p class="meta">{{ $p.ReadingTime }} MIN READ</p>

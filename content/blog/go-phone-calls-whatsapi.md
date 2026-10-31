@@ -4,6 +4,7 @@ title: 'How I taught Go to make phone calls'
 description: 'WhatsApp messages are just text. Calls are a different animal. How I tamed it:'
 tags: ['go', 'whatsapp', 'voip']
 author: nuh
+featured: true
 ---
 
 Texting through code is easy. Your program sends words, the other side receives words. Done. Then someone asks "can it also call people" and you discover that voice is a whole different animal. This is the story of teaching my Go gateway to speak.

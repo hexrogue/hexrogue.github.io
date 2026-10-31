@@ -4,6 +4,7 @@ title: 'How a captive portal works, and how to build one on an ESP'
 description: 'The hotel wifi login page is a DNS lie and an HTTP redirect. Build the same trick on a five-dollar board, and see why your phone trusts it.'
 tags: ['esp32', 'wifi', 'explainer']
 author: nuh
+featured: true
 ---
 
 Join a hotel wifi, and before you type anything, your phone opens a login page. Nothing is installed and nobody told you to look, yet the page appears. It is the digital equivalent of a hotel clerk sliding a form under the door before you have taken off your shoes. Two old tricks stacked on each other put it there, and both are small enough to run on the ESP32 on my desk.
