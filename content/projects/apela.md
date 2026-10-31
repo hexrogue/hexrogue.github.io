@@ -1,7 +1,7 @@
 ---
 date: '2026-10-27T00:00:00+08:00'
 title: 'APEL.A Admissions Portal'
-description: 'A full APEL.A admissions portal: portfolio building, evidence, assessments, scheduling, payments, and candidate tracking. The first of its kind in Malaysia.'
+description: 'The first APEL.A admissions portal in Malaysia: a 23-step workflow, a structured portfolio builder, payments, and an exam integrity engine that runs MediaPipe face detection in the browser.'
 weight: 1
 status: 'PRIVATE CLIENT / FIRST IN MALAYSIA'
 period: '2026 - PRESENT'
@@ -27,13 +27,20 @@ A single Next.js application with separate candidate, assessor, PIC, finance, an
 - **Finance**: fee enforcement, payment requests, receipts, CSV and Excel export, and finance analytics.
 - **Admin and access control**: role-based permissions, per-user dashboard access, audit trails, email templates, programme catalogue, PIC workspaces, and read-only share links.
 
+## Exam Integrity
+
+The biggest single piece of the system. A sitting has to be watchable without a human staring at a video wall, and whatever it produces has to survive a dispute months later.
+
+- **Detection runs in the candidate's browser.** The exam runner reads the camera stream with MediaPipe and flags no face, multiple faces, a turned head, a phone, and a book. There is no inference server to operate and no video has to leave the candidate's machine for detection to work.
+- **Signals are scored, not asserted.** Every event carries a confidence score, gets de-duplicated so one head turn does not become forty rows, and is stored with a JPEG snapshot captured at the same moment.
+- **A human still decides.** Signals never end a sitting and never fail an attempt on their own. Staff review them before a result is published. Only repeated tab-switch and fullscreen violations terminate a session.
+- **Live proctoring runs on the same session.** Camera and microphone publish over WebRTC and staff subscribe while the sitting is in progress. It uses STUN by default and joins TURN only when the server provisions it, with a STUN-only fallback so the camera never hard-fails. Recorded chunks stay available for replay, and exam chat is kept with the session.
+
 ## Under the Hood
 
 The parts I would talk about in an interview:
 
 - **One workflow engine, not a pile of screens.** The APEL.A process runs 23 steps across application, payment, aptitude, portfolio, interview, and completion. Each step declares its stage, the actor expected to move it forward, and whether entering it should notify the candidate. Transitions are validated, so a case cannot skip payment or jump to an interview, and every change lands in an audit trail with the actor, role, and remarks.
-- **Exam integrity that stays evidence.** The exam runner uses MediaPipe in the browser to detect no face, multiple faces, a turned head, a phone, and a book. It scores confidence, de-duplicates signals, and attaches a JPEG snapshot. Signals never auto-submit; a human reviews them. Only repeated tab and fullscreen violations end a sitting.
-- **Live proctoring over WebRTC.** A candidate publishes camera and microphone, and staff subscribe. It uses STUN by default and joins TURN only when the server provisions it, with a STUN-only fallback so the camera never hard-fails. Camera chunks are recorded for replay, and exam chat is kept with the session.
 - **Permissions that only narrow.** Nine roles, from candidate to superadmin. A per-user override can remove a section but cannot add one the role does not already have, and every API route re-checks the session on the server instead of trusting the UI.
 - **Payments with a manual floor.** ToyyibPay FPX handles online payment when the owner enables it, with callbacks matched by an external reference. When it is off, candidates upload proof and finance verifies it. Receipts are generated as PDFs either way.
 - **The official form, as data.** The portfolio is structured, not a scanned form: work experience, formal and non-formal learning, evidence, referees, declaration, and signature. Export renders the official layout, merges uploaded evidence PDFs with labelled appendix pages, and compresses images to stay under the function payload limit.

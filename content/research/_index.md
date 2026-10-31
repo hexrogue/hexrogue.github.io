@@ -14,7 +14,7 @@ The rule is one topic at a time. Right now that topic is computation offloading 
     <h2>Offload or Not?</h2>
     <p class="research-lede">A simulation study of latency- and energy-aware computation offloading for IoT devices. The question is not whether the edge is faster. It is when moving work to the edge stops helping and starts building a queue.</p>
     <p>The model compares three policies: run everything locally, send everything to a shared edge server, and a deadline/energy-aware heuristic that decides per task. The simulator, the data, and the figures are in the repository.</p>
-    <div class="tech-tags">`Python` `NumPy` `Matplotlib` `Monte Carlo` `Queueing` `Edge computing`</div>
+    <div class="tech-tags"><span>Python</span> <span>NumPy</span> <span>Matplotlib</span> <span>Monte Carlo</span> <span>Queueing</span> <span>Edge computing</span></div>
     <div class="paper-links">
       <a href="/research/offloading-paper/">Read the working paper &gt;&gt;&gt;</a>
       <a href="/research/thesis-plan/">Thesis plan &gt;&gt;&gt;</a>

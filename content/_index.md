@@ -52,13 +52,13 @@ image: "/images/og-default.png"
   <article class="work-card featured">
     <div class="work-top"><span class="badge">PRIVATE CLIENT / FIRST IN MALAYSIA</span><span class="meta">2026 &mdash; PRESENT</span></div>
     <h3><a href="/projects/apela/">APEL.A Admissions Portal</a></h3>
-    <p>The first APEL.A admissions system in Malaysia. Candidates build a portfolio, upload evidence, sit assessments, book interviews, pay, and track the decision in one portal.</p>
+    <p>The first APEL.A admissions system in Malaysia. Candidates build a portfolio, upload evidence, sit a proctored assessment, pay, and track the decision in one portal.</p>
     <ul>
-      <li>Portfolio builder, competency checklist, evidence uploads, declarations, and branded PDF output.</li>
-      <li>Exam scheduling, assessor availability, interview booking, proctoring signals, and result publication.</li>
+      <li><strong>Exam integrity engine:</strong> MediaPipe face detection in the candidate's browser flags no face, multiple faces, a turned head, a phone, and a book, with confidence scores and snapshots for human review.</li>
+      <li>Portfolio builder, competency checklist, evidence uploads, declarations, and branded PDF output across a 23-step workflow.</li>
       <li>Role-based staff dashboards, finance, audit trails, and read-only share links.</li>
     </ul>
-    <div class="tech-tags">`Next.js` `TypeScript` `PostgreSQL` `Drizzle` `Better Auth` `Puppeteer`</div>
+    <div class="tech-tags"><span>Next.js</span> <span>TypeScript</span> <span>PostgreSQL</span> <span>MediaPipe</span> <span>WebRTC</span> <span>Puppeteer</span></div>
   </article>
 
   <article class="work-card">
@@ -70,7 +70,7 @@ image: "/images/og-default.png"
       <li>Branded PDF generation for study plans, cover letters, tables of contents, and module breakdowns.</li>
       <li>WhatsApp automation for follow-ups, document delivery, and inbound lead capture.</li>
     </ul>
-    <div class="tech-tags">`Next.js` `TypeScript` `Drizzle` `PostgreSQL` `Puppeteer`</div>
+    <div class="tech-tags"><span>Next.js</span> <span>TypeScript</span> <span>Drizzle</span> <span>PostgreSQL</span> <span>Puppeteer</span></div>
   </article>
 
   <article class="work-card">
@@ -81,7 +81,7 @@ image: "/images/og-default.png"
       <li>Go service for messaging, calls, and real-time events over WebSocket.</li>
       <li>Docker deployment with a small operational footprint.</li>
     </ul>
-    <div class="tech-tags">`Go` `whatsmeow` `Docker` `WebSocket`</div>
+    <div class="tech-tags"><span>Go</span> <span>whatsmeow</span> <span>Docker</span> <span>WebSocket</span></div>
   </article>
 
   <article class="work-card">
@@ -92,7 +92,7 @@ image: "/images/og-default.png"
       <li>Fee schedules, payments, commissions, and student accounts.</li>
       <li>Timetables, clash detection, teaching files, and audit logs.</li>
     </ul>
-    <div class="tech-tags">`Next.js` `TypeScript` `PostgreSQL` `Drizzle` `TanStack Table`</div>
+    <div class="tech-tags"><span>Next.js</span> <span>TypeScript</span> <span>PostgreSQL</span> <span>Drizzle</span> <span>TanStack Table</span></div>
   </article>
 
   <article class="work-card">
@@ -103,7 +103,7 @@ image: "/images/og-default.png"
       <li>Edge-deployed proxy connections with D1-backed user management.</li>
       <li>Built for personal infrastructure with as little operational overhead as possible.</li>
     </ul>
-    <div class="tech-tags">`TypeScript` `Cloudflare Workers` `D1`</div>
+    <div class="tech-tags"><span>TypeScript</span> <span>Cloudflare Workers</span> <span>D1</span></div>
   </article>
 </div>
 
@@ -122,37 +122,37 @@ image: "/images/og-default.png"
   <section class="cap-card">
     <h3>Product &amp; automation</h3>
     <p>Internal tools, admissions portals, CRMs, assessment workflows, document generation, APIs, and the glue that removes repetitive work.</p>
-    <div class="tech-tags">`Go` `TypeScript` `Next.js` `React` `PostgreSQL` `SQLite` `Better Auth`</div>
+    <div class="tech-tags"><span>Go</span> <span>TypeScript</span> <span>Next.js</span> <span>React</span> <span>PostgreSQL</span> <span>SQLite</span> <span>Better Auth</span></div>
   </section>
 
   <section class="cap-card">
     <h3>Cloud &amp; platform</h3>
     <p>Deploying and operating services on Linux, containers, and managed cloud. Comfortable moving from a laptop to a server to the edge.</p>
-    <div class="tech-tags">`AWS S3` `Lambda` `EC2` `CloudFront` `Google Cloud` `Kubernetes` `Docker` `Cloudflare Workers` `D1` `KV` `Vercel`</div>
+    <div class="tech-tags"><span>AWS S3</span> <span>Lambda</span> <span>EC2</span> <span>CloudFront</span> <span>Google Cloud</span> <span>Kubernetes</span> <span>Docker</span> <span>Cloudflare Workers</span> <span>D1</span> <span>KV</span> <span>Vercel</span></div>
   </section>
 
   <section class="cap-card">
     <h3>Networks &amp; security</h3>
     <p>Packet-level debugging, segmented networks, VPNs, wifi and BLE analysis, and a security mindset that starts with understanding the system.</p>
-    <div class="tech-tags">`802.11` `BLE` `Sub-GHz` `OpenWrt` `VLANs` `WireGuard` `Wireshark` `Burp Suite` `Ghidra` `radare2`</div>
+    <div class="tech-tags"><span>802.11</span> <span>BLE</span> <span>Sub-GHz</span> <span>OpenWrt</span> <span>VLANs</span> <span>WireGuard</span> <span>Wireshark</span> <span>Burp Suite</span> <span>Ghidra</span> <span>radare2</span></div>
   </section>
 
   <section class="cap-card">
     <h3>Hardware &amp; electronics</h3>
     <p>Embedded projects that start with a datasheet and end with a working device, including the part where the driver says no.</p>
-    <div class="tech-tags">`ESP32` `ESP-IDF` `C` `Sensors` `Serial` `Electronics` `Hardware debugging`</div>
+    <div class="tech-tags"><span>ESP32</span> <span>ESP-IDF</span> <span>C</span> <span>Sensors</span> <span>Serial</span> <span>Electronics</span> <span>Hardware debugging</span></div>
   </section>
 
   <section class="cap-card">
     <h3>Systems &amp; operations</h3>
     <p>Arch Linux daily driver, homelab owner, and the person who reads the logs before restarting the service. Usually.</p>
-    <div class="tech-tags">`Arch Linux` `Proxmox` `Nginx` `Caddy` `Redis` `Bash` `CI/CD` `Git`</div>
+    <div class="tech-tags"><span>Arch Linux</span> <span>Proxmox</span> <span>Nginx</span> <span>Caddy</span> <span>Redis</span> <span>Bash</span> <span>CI/CD</span> <span>Git</span></div>
   </section>
 
   <section class="cap-card">
     <h3>Communication</h3>
     <p>I write the explanation I wish someone had handed me: diagrams, plain language, and the mistakes included. 56 posts and counting.</p>
-    <div class="tech-tags">`Technical writing` `Documentation` `Teaching` `Debugging notes`</div>
+    <div class="tech-tags"><span>Technical writing</span> <span>Documentation</span> <span>Teaching</span> <span>Debugging notes</span></div>
   </section>
 </div>
 
@@ -255,7 +255,7 @@ image: "/images/og-default.png"
     <p class="telemetry">/// WORKING PAPER 01</p>
     <h3>Offload or Not?</h3>
     <p>A reproducible simulation study of latency and energy trade-offs for edge-assisted IoT devices. The result is not that the edge is faster. It is that a static offloading policy looks good at one load and fails at another.</p>
-    <div class="tech-tags">`Python` `NumPy` `Matplotlib` `Monte Carlo` `Edge computing`</div>
+    <div class="tech-tags"><span>Python</span> <span>NumPy</span> <span>Matplotlib</span> <span>Monte Carlo</span> <span>Edge computing</span></div>
   </div>
   <div class="research-stats">
     <div><strong>27</strong><span>simulation points</span></div>

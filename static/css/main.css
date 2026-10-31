@@ -139,7 +139,7 @@ article.page { max-width: 40rem; }
 .home > div { margin-bottom: 1rem; }
 .home h2 { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--brut-line); }
 .home h3 { margin-top: 2rem; }
-.home .tech-tags { margin-bottom: 1.5rem; display: block; }
+.home .tech-tags { margin-bottom: 1.5rem; }
 .home .blog-grid { margin-top: 2rem; }
 
 /* Skills: bordered telemetry cells, no JS, no animation */
@@ -342,7 +342,9 @@ a.post-nav-cell:hover .post-nav-title { color: var(--brut-red); }
 .pager button:hover { border-color: var(--brut-fg); }
 .pager button:disabled { opacity: 0.35; cursor: default; }
 
-.tech-tags { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brut-dim); }
+.tech-tags { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brut-dim); display: flex; flex-wrap: wrap; gap: 0.35rem 0.6rem; }
+.tech-tags span { border: 1px solid var(--brut-line); padding: 0.1rem 0.45rem; }
+.work-card li strong { color: var(--brut-fg); }
 .ico { color: var(--brut-red); font-size: 0.75rem; letter-spacing: 0.08em; }
 
 /* Suggested-listening audio box: bordered panel, native controls */
