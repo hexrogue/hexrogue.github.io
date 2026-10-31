@@ -6,8 +6,9 @@
 {{- $alt := .alt | default "" -}}
 {{- $caption := .caption -}}
 {{- $crop := .crop -}}
+{{- $isDiagram := strings.HasSuffix $src ".svg" -}}
 {{- $figclass := "shot" -}}
-{{- if $crop }}{{ $figclass = "shot shot--crop" }}{{ end -}}
+{{- if $isDiagram }}{{ $figclass = "shot shot--diagram" }}{{ else if $crop }}{{ $figclass = "shot shot--crop" }}{{ end -}}
 {{- $res := resources.Get $src -}}
 {{- if $res -}}
   {{- $large := $res -}}

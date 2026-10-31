@@ -486,6 +486,8 @@ a.post-nav-cell:hover .post-nav-title { color: var(--brut-red); }
 .shot { display: block; margin: 0 0 1rem; border: 1px solid var(--brut-line); background: var(--brut-panel); }
 .shot img { display: block; width: 100%; height: auto; }
 .shot--crop img { aspect-ratio: 16 / 9; object-fit: cover; object-position: top center; }
+/* Diagrams are wide flowcharts: keep every node visible instead of cropping the ends. */
+.shot--diagram img { aspect-ratio: 16 / 9; object-fit: contain; padding: 0.75rem; }
 .shot figcaption, .shot-grid figcaption {
   font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em;
   color: var(--brut-dim); padding: 0.5rem 0.6rem; border-top: 1px solid var(--brut-line);
