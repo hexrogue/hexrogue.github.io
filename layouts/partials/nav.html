@@ -5,4 +5,5 @@
     <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
     {{- end }}
   </nav>
+  {{- partial "search.html" . -}}
 </header>

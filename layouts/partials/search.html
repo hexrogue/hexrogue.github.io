@@ -1,0 +1,148 @@
+<div id="search-container" data-pagefind-ignore>
+  <button id="search-trigger" type="button" title="Search (Ctrl+K)" aria-label="Search this site">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <span>Search</span>
+  </button>
+
+  <div id="search-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Site search">
+    <div class="search-modal-inner">
+      <div class="search-header">
+        <input type="search" id="search-input" placeholder="Search research, projects, writing…" autocomplete="off" spellcheck="false" aria-label="Search query">
+        <button id="search-close" type="button" aria-label="Close search">✕</button>
+      </div>
+      <div id="search-results" aria-live="polite"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var basePath = '{{ "pagefind/" | relURL }}';
+  var modal = document.getElementById('search-modal');
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  var trigger = document.getElementById('search-trigger');
+  var closeBtn = document.getElementById('search-close');
+  var pagefindPromise = null;
+  var seq = 0;
+  var debounceTimer = null;
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function note(html, isError) {
+    results.innerHTML = '<p class="search-note' + (isError ? ' search-note--error' : '') + '">' + html + '</p>';
+  }
+
+  function getPagefind() {
+    if (!pagefindPromise) {
+      pagefindPromise = import(basePath + 'pagefind.js')
+        .then(function (mod) {
+          return mod.options({ basePath: basePath }).then(function () { return mod; });
+        })
+        .catch(function (error) {
+          pagefindPromise = null;
+          throw error;
+        });
+    }
+    return pagefindPromise;
+  }
+
+  function render(items) {
+    results.innerHTML = items.map(function (data) {
+      var title = (data.meta && data.meta.title) || data.url;
+      // data.excerpt is HTML produced by Pagefind and only contains <mark> highlights.
+      return '<a class="search-result" href="' + escapeHtml(data.url) + '">' +
+        '<span class="search-result-title">' + escapeHtml(title) + '</span>' +
+        '<span class="search-result-excerpt">' + data.excerpt + '</span>' +
+        '<span class="search-result-url">' + escapeHtml(data.url) + '</span>' +
+        '</a>';
+    }).join('');
+  }
+
+  function runSearch(term) {
+    var current = ++seq;
+    var query = term.trim();
+
+    if (query.length < 2) {
+      note(query ? 'Type at least 2 characters.' : '');
+      return;
+    }
+
+    note('Searching…');
+
+    getPagefind().then(function (mod) {
+      return mod.search(query);
+    }).then(function (search) {
+      if (current !== seq) return;
+      if (!search.results.length) {
+        note('No results for “' + escapeHtml(query) + '”.');
+        return;
+      }
+      return Promise.all(search.results.slice(0, 10).map(function (result) {
+        return result.data();
+      })).then(function (items) {
+        if (current !== seq) return;
+        render(items);
+      });
+    }).catch(function (error) {
+      if (current !== seq) return;
+      console.error('Pagefind search failed', error);
+      note('Search unavailable. The Pagefind index is missing — run <code>pagefind --site public</code> after building.', true);
+    });
+  }
+
+  function openModal() {
+    modal.classList.remove('hidden');
+    input.focus();
+    input.select();
+  }
+
+  function closeModal() {
+    modal.classList.add('hidden');
+  }
+
+  trigger.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) closeModal();
+  });
+
+  input.addEventListener('input', function (event) {
+    clearTimeout(debounceTimer);
+    var term = event.target.value;
+    debounceTimer = setTimeout(function () { runSearch(term); }, 150);
+  });
+
+  input.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowDown') {
+      var first = results.querySelector('.search-result');
+      if (first) { event.preventDefault(); first.focus(); }
+    }
+  });
+
+  results.addEventListener('keydown', function (event) {
+    var links = Array.prototype.slice.call(results.querySelectorAll('.search-result'));
+    var index = links.indexOf(document.activeElement);
+    if (index < 0) return;
+    if (event.key === 'ArrowDown' && links[index + 1]) { event.preventDefault(); links[index + 1].focus(); }
+    else if (event.key === 'ArrowUp') { event.preventDefault(); (links[index - 1] || input).focus(); }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+      event.preventDefault();
+      if (modal.classList.contains('hidden')) openModal();
+      else closeModal();
+    } else if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+})();
+</script>

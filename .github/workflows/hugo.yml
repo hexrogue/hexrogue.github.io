@@ -54,6 +54,10 @@ jobs:
             grep -q "$event" public/blog/index.html || { echo "::error::$event missing from public/blog/index.html"; exit 1; }
           done
 
+
+      - name: Index with Pagefind
+        run: npx pagefind --site public
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
